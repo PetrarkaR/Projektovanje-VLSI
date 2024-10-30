@@ -1,68 +1,98 @@
-library IEEE;
-use IEEE.Std_logic_1164.all;
-use IEEE.Numeric_Std.all;
+LIBRARY IEEE;
+USE IEEE.Std_logic_1164.ALL;
+USE IEEE.Numeric_Std.ALL;
 
-entity Kogge_Stone_Adder_tb is
-end;
+ENTITY Kogge_Stone_Adder_tb IS
+END;
 
-architecture bench of Kogge_Stone_Adder_tb is
+ARCHITECTURE bench OF Kogge_Stone_Adder_tb IS
 
-  component Kogge_Stone_Adder
-      Port  (A : in std_logic_vector(7 downto 0);
-             B : in std_logic_vector(7 downto 0);
-             C_in : in STD_LOGIC := '0';
-             C_out : out STD_LOGIC;
-             Sum_out : out STD_LOGIC_VECTOR(7 downto 0));
-  end component;
+  COMPONENT Kogge_Stone_Adder
+    PORT (
+      A : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      C_in : IN STD_LOGIC := '0';
+      C_out : OUT STD_LOGIC;
+      Sum_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+  END COMPONENT;
 
-  signal A: std_logic_vector(7 downto 0);
-  signal B: std_logic_vector(7 downto 0);
-  signal C_in: STD_LOGIC := '0';
-  signal C_out: STD_LOGIC;
-  signal Sum_out: STD_LOGIC_VECTOR(7 downto 0);
+  SIGNAL A : STD_LOGIC_VECTOR(7 DOWNTO 0);
+  SIGNAL B : STD_LOGIC_VECTOR(7 DOWNTO 0);
+  SIGNAL C_in : STD_LOGIC := '0';
+  SIGNAL C_out : STD_LOGIC;
+  SIGNAL Sum_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
 
-begin
+BEGIN
 
-  uut: Kogge_Stone_Adder port map ( A       => A,
-                                    B       => B,
-                                    C_in    => C_in,
-                                    C_out   => C_out,
-                                    Sum_out => Sum_out );
+  uut : Kogge_Stone_Adder PORT MAP(
+    A => A,
+    B => B,
+    C_in => C_in,
+    C_out => C_out,
+    Sum_out => Sum_out);
 
 
-stimulus: process
-begin
+  stimulus : PROCESS
+  BEGIN
 
-  C_in<='1';
-  A <= "00001001";
-  B <= "00000000";
-  wait for 20 ns;
+    C_in <= '1';
+    A <= "00001001";
+    B <= "00000000";
+    WAIT FOR 20 ns;
 
-  C_in<='0';
-  A<="10000000";
-  B<="10000000";
-  wait for 20 ns;
+    C_in <= '0';
+    A <= "10000000";
+    B <= "10000000";
+    WAIT FOR 20 ns;
 
-  C_in <= '0';
-  A <= "11111111"; -- 255
-  B <= "11111111"; -- 255
-  wait for 20 ns;
- 
-  C_in <= '0';
-  A <= "00000000"; -- 0
-  B <= "00000000"; -- 0
-  wait for 20 ns;
-  
-  C_in <= '0';
-  A <= "11110000"; -- -16 
-  B <= "00001111"; -- 15
-  wait for 20 ns;
+    C_in <= '0';
+    A <= "11111111"; -- 255
+    B <= "11111111"; -- 255
+    WAIT FOR 20 ns;
 
-  C_in <= '1';
-  A <= "10101010"; -- 170
-  B <= "01010101"; -- 85
-  wait for 20 ns;
-  wait; 
-end process;
+    C_in <= '0';
+    A <= "00000000"; -- 0
+    B <= "00000000"; -- 0
+    WAIT FOR 20 ns;
 
-end;
+    C_in <= '0';
+    A <= "11110000"; -- -16
+    B <= "00001111"; -- 15
+    WAIT FOR 20 ns;
+    C_in <= '0';
+    A <= "11110000"; -- -16
+    B <= "00001111"; -- 15
+    WAIT FOR 20 ns;
+
+    C_in <= '0';
+    A <= "10101010"; -- 170
+    B <= "01010101"; -- 85
+    WAIT FOR 20 ns;
+
+-- novo
+    a <= "00000000";
+    b <= "00000000";
+    c_in <= '0';
+    WAIT FOR 20 ns;
+
+    a <= "00000011";
+    b <= "00000111";
+    c_in <= '1';
+    WAIT FOR 20 ns;
+
+    a <= "00000101";
+    b <= "00101010";
+    c_in <= '1';
+    WAIT FOR 20 ns;
+
+    -- B.J.: nisi dovoljno testirao, ovo ne radi
+
+    a <= "00001011";
+    b <= "00110110";
+    c_in <= '0';
+    WAIT FOR 20 ns;
+
+    WAIT;
+  END PROCESS;
+
+END;

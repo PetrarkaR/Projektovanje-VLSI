@@ -1,22 +1,24 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
-Package Carry_Tree_Adder_pkg is
+PACKAGE Carry_Tree_Adder_pkg IS
 
-    Component Generator is
-        Port ( A : in STD_LOGIC;
-               B : in STD_LOGIC;
-               G_out : out STD_LOGIC;
-               P_out : out STD_LOGIC);
-     end component;
-     
-     Component Carry_oper is
-            Port ( G_prev : in STD_LOGIC;
-            G_curr : in STD_LOGIC;
-            P_prev : in STD_LOGIC;
-            P_curr : in STD_LOGIC;
-            G_out : out STD_LOGIC;
-            P_out : out STD_LOGIC);
-     end component;
+       COMPONENT Generator IS
+              PORT (
+                     A : IN STD_LOGIC;
+                     B : IN STD_LOGIC;
+                     G_out : OUT STD_LOGIC;
+                     P_out : OUT STD_LOGIC);
+       END COMPONENT;
 
-end Carry_Tree_Adder_pkg;
+       COMPONENT Carry_oper IS
+              PORT (
+                     G_prev : IN STD_LOGIC;
+                     G_curr : IN STD_LOGIC;
+                     P_prev : IN STD_LOGIC;
+                     P_curr : IN STD_LOGIC;
+                     G_out : OUT STD_LOGIC;
+                     P_out : OUT STD_LOGIC);
+       END COMPONENT;
+
+END Carry_Tree_Adder_pkg;

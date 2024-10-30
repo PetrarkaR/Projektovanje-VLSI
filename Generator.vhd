@@ -1,17 +1,18 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
-entity Generator is
-    Port ( A : in STD_LOGIC;
-           B : in STD_LOGIC;
-           G_out : out STD_LOGIC;
-           P_out : out STD_LOGIC);
-end Generator;
+ENTITY Generator IS
+    PORT (
+        A : IN STD_LOGIC;
+        B : IN STD_LOGIC;
+        G_out : OUT STD_LOGIC;
+        P_out : OUT STD_LOGIC);
+END Generator;
 
-architecture Behavioral of Generator is
+ARCHITECTURE Behavioral OF Generator IS
 
-begin
-P_out <= A XOR B;
-G_out <= A AND B;
+BEGIN
+    P_out <= A XOR B;
+    G_out <= A AND B;
 
-end Behavioral;
+END Behavioral;
