@@ -27,7 +27,7 @@ BEGIN
   uut : Kogge_Stone_Adder PORT MAP(
     A => A,
     B => B,
-    C_in => C_in,
+    C_in => C_in, 
     C_out => C_out,
     Sum_out => Sum_out);
 
