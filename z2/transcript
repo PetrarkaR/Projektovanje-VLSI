@@ -1,0 +1,520 @@
+# Compile of 24bitSQC.vhd failed with 9 errors.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 1 failed with 9 errors.
+# Compile of 24bitSQC.vhd failed with 9 errors.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 1 failed with 9 errors.
+# Compile of 24bitSQC.vhd was successful.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 20:30:54 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# ** Fatal: (vsim-3817) Port "start_root" of entity "sqc" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /sqc_tb/uut File: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd Line: 12
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 20:30:55 on Nov 02,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+# Compile of 24bitSQC.vhd was successful.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 20:31:34 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fa(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /sqc_tb/uut/B(11 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUU) to the signal network.
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/sqc_tb/*
+run
+run
+run
+quit -sim
+# End time: 20:36:56 on Nov 02,2024, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 3
+# Compile of 24bitSQC.vhd was successful.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 20:37:10 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# ** Error: (vsim-3732) No default binding for component instance 'uut'.
+#    The following component ports are not on the entity:
+#           carryout_out
+#           enable_out
+#           cnt_out
+#           cout_out
+#           expandedB_out
+#           multiplex2B_out
+#           multiplex1B_out
+#           multiplex3A_out
+#           multiplex2A_out
+#           multiplex1A_out
+#           difference_out
+#           subtrahend_out
+#           minuend_out
+#           registerB_out
+#           registerA_out
+#           entryA_out
+#           expandedA_out
+#    Time: 0 ps  Iteration: 0  Instance: /sqc_tb/uut File: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC_tb.vhd Line: 77
+# Loading ieee.std_logic_arith(body)
+# Loading work.fa(behavioral)
+# Error loading design
+# End time: 20:37:10 on Nov 02,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of 24bitSQC.vhd failed with 3 errors.
+# Compile of 24bitSQC_tb.vhd failed with 1 errors.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 2 failed with 4 errors.
+# Compile of 24bitSQC.vhd failed with 3 errors.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of 24bitSQC.vhd was successful.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 20:40:06 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fa(behavioral)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/sqc_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Break key hit
+quit -sim
+# End time: 20:49:29 on Nov 02,2024, Elapsed time: 0:09:23
+# Errors: 0, Warnings: 4
+# Compile of 24bitSQC.vhd was successful.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 20:49:43 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fa(behavioral)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/sqc_tb/At \
+sim:/sqc_tb/Bt \
+sim:/sqc_tb/clkt \
+sim:/sqc_tb/rstt \
+sim:/sqc_tb/startt
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 20:57:12 on Nov 02,2024, Elapsed time: 0:07:29
+# Errors: 0, Warnings: 2
+# Compile of 24bitSQC.vhd was successful with warnings.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 20:57:29 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fa(behavioral)
+# WARNING: No extended dataflow license exists
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/sqc_tb/At \
+sim:/sqc_tb/Bt \
+sim:/sqc_tb/clkt \
+sim:/sqc_tb/rstt \
+sim:/sqc_tb/startt
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sqc_tb/uut
+run
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 36 (35 downto 0). Right is 38 (0 to 37).
+#    Time: 110 ns  Iteration: 1  Process: /sqc_tb/uut/line__46 File: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd
+# Fatal error in Process line__46 at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd line 64
+# 
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 64 Process line__46
+# 
+quit -sim
+# End time: 21:00:28 on Nov 02,2024, Elapsed time: 0:02:59
+# Errors: 1, Warnings: 3
+# Compile of 24bitSQC.vhd was successful with warnings.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 21:00:44 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fa(behavioral)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/sqc_tb/*
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sqc_tb/uut
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 36 (35 downto 0). Right is 38 (0 to 37).
+#    Time: 90 ns  Iteration: 1  Process: /sqc_tb/uut/control_proc File: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd
+# Fatal error in Process control_proc at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd line 65
+# 
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 65 Process control_proc
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 65 Process control_proc
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 65 Process control_proc
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 65 Process control_proc
+# 
+quit -sim
+# End time: 21:03:04 on Nov 02,2024, Elapsed time: 0:02:20
+# Errors: 1, Warnings: 3
+# Compile of 24bitSQC.vhd was successful with warnings.
+# Compile of 24bitSQC_tb.vhd failed with 1 errors.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of 24bitSQC.vhd was successful with warnings.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of 24bitSQC.vhd was successful with warnings.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 21:03:46 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fa(behavioral)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/sqc_tb/*
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sqc_tb/uut
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 36 (35 downto 0). Right is 38 (0 to 37).
+#    Time: 90 ns  Iteration: 1  Process: /sqc_tb/uut/control_proc File: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd
+# Fatal error in Process control_proc at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd line 59
+# 
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 59 Process control_proc
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 59 Process control_proc
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 59 Process control_proc
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 59 Process control_proc
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 59 Process control_proc
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd 59 Process control_proc
+# 
+quit -sim
+# End time: 21:05:16 on Nov 02,2024, Elapsed time: 0:01:30
+# Errors: 1, Warnings: 5
+# Compile of 24bitSQC.vhd was successful.
+# Compile of 24bitSQC_tb.vhd was successful.
+# Compile of adder_pkg - Copy.vhd was successful.
+# Compile of adder_pkg.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# Compile of halfadder.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.sqc_tb
+# vsim -gui work.sqc_tb 
+# Start time: 21:05:29 on Nov 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sqc_tb(bench)
+# Loading work.adder_pkg
+# Loading work.sqc(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.fa(behavioral)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/sqc_tb/*
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /sqc_tb/uut
+run
+run
+run
+run
+run
+run
+run
+# End time: 21:06:17 on Nov 02,2024, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 3

@@ -12,41 +12,20 @@ ARCHITECTURE bench OF SQC_tb IS
             B                : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
             clk              : IN STD_LOGIC;
             rst              : IN STD_LOGIC;
-            start            : IN STD_LOGIC;
+            start_root            : IN STD_LOGIC;
+            stop_root        : OUT STD_LOGIC
 
-            expandedA_out    : OUT STD_LOGIC_VECTOR(35 DOWNTO 0);
-            entryA_out       : OUT STD_LOGIC_VECTOR(35 DOWNTO 0);
-            registerA_out    : OUT STD_LOGIC_VECTOR(35 DOWNTO 0);
-            registerB_out    : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-            minuend_out      : OUT STD_LOGIC_VECTOR(13 DOWNTO 0);
-            subtrahend_out   : OUT STD_LOGIC_VECTOR(13 DOWNTO 0);
-            difference_out   : OUT STD_LOGIC_VECTOR(13 DOWNTO 0);
-            multiplex1A_out  : OUT STD_LOGIC_VECTOR(35 DOWNTO 0);
-            multiplex2A_out  : OUT STD_LOGIC_VECTOR(35 DOWNTO 0);
-            multiplex3A_out  : OUT STD_LOGIC_VECTOR(35 DOWNTO 0);
-            multiplex1B_out  : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-            multiplex2B_out  : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-            expandedB_out    : OUT STD_LOGIC_VECTOR(13 DOWNTO 0);
-            cout_out         : OUT STD_LOGIC;
-            cnt_out          : OUT unsigned(3 downto 0);
-            enable_out       : OUT STD_LOGIC;
-            carryout_out     : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
         );
     END COMPONENT;
 
-    SIGNAL At             : STD_LOGIC_VECTOR(23 DOWNTO 0) := "000000000000000000000100";
+    SIGNAL At             : STD_LOGIC_VECTOR(23 DOWNTO 0) := "000000000000000001000000";
     SIGNAL Bt             : STD_LOGIC_VECTOR(11 DOWNTO 0);
     SIGNAL clkt           : STD_LOGIC := '0';
     SIGNAL rstt           : STD_LOGIC := '0';
     SIGNAL startt         : STD_LOGIC := '0';
+    SIGNAL stopp          : STD_LOGIC := '0';
 
     -- Internal signal observation
-    SIGNAL expandedA_tb, entryA_tb, registerA_tb, multiplex1A_tb, multiplex2A_tb, multiplex3A_tb : STD_LOGIC_VECTOR(35 DOWNTO 0);
-    SIGNAL registerB_tb, multiplex1B_tb, multiplex2B_tb : STD_LOGIC_VECTOR(11 DOWNTO 0);
-    SIGNAL minuend_tb, subtrahend_tb, difference_tb, expandedB_tb : STD_LOGIC_VECTOR(13 DOWNTO 0);
-    SIGNAL cout_tb, enable_tb : STD_LOGIC;
-    SIGNAL cnt_tb : unsigned(3 downto 0);
-    SIGNAL carryout_tb : STD_LOGIC_VECTOR(13 DOWNTO 0);
 
 BEGIN
     -- Instantiate the Unit Under Test (UUT)
@@ -56,24 +35,8 @@ BEGIN
             B                => Bt,
             clk              => clkt,
             rst              => rstt,
-            start            => startt,
-            expandedA_out    => expandedA_tb,
-            entryA_out       => entryA_tb,
-            registerA_out    => registerA_tb,
-            registerB_out    => registerB_tb,
-            minuend_out      => minuend_tb,
-            subtrahend_out   => subtrahend_tb,
-            difference_out   => difference_tb,
-            multiplex1A_out  => multiplex1A_tb,
-            multiplex2A_out  => multiplex2A_tb,
-            multiplex3A_out  => multiplex3A_tb,
-            multiplex1B_out  => multiplex1B_tb,
-            multiplex2B_out  => multiplex2B_tb,
-            expandedB_out    => expandedB_tb,
-            cout_out         => cout_tb,
-            cnt_out          => cnt_tb,
-            enable_out       => enable_tb,
-            carryout_out     => carryout_tb
+            start_root       => startt,
+            stop_root        =>stopp
         );
 
     -- Clock generation process

@@ -1,0 +1,207 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/swagg/OneDrive/Desktop/andjela
+Padder_pkg
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z1 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 99
+w1730132012
+Z2 dC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2
+8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/adder_pkg.vhd
+FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/adder_pkg.vhd
+l0
+L4 1
+VDCf0QlJJzfUMgS>a=CZ:P1
+!s100 C9JH0?OFg?l=fT7?;VM2n0
+Z3 OV;C;2020.1;71
+32
+Z4 !s110 1730577919
+!i10b 1
+Z5 !s108 1730577919.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/adder_pkg.vhd|
+!s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/adder_pkg.vhd|
+!i113 1
+Z6 o-work work -2002 -explicit
+Z7 tExplicit 1 CvgOpt 0
+Efa
+Z8 w1730133304
+Z9 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R0
+R1
+!i122 100
+R2
+Z10 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/fulladder.vhd
+Z11 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/fulladder.vhd
+l0
+L5 1
+VEE`_YkN9dYn<_RA106zO13
+!s100 Ak15h_;bP9HA=A5KJ7E4;2
+R3
+32
+Z12 !s110 1730577920
+!i10b 1
+R5
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/fulladder.vhd|
+Z14 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/fulladder.vhd|
+!i113 1
+R6
+R7
+Abehavioral
+R9
+R0
+R1
+DEx4 work 2 fa 0 22 EE`_YkN9dYn<_RA106zO13
+!i122 100
+l19
+L15 11
+VJA4g8M^JnKK2`?aP^fhDi2
+!s100 a6BMZLOlZBFZU@fWTPlnF2
+R3
+32
+R12
+!i10b 1
+R5
+R13
+R14
+!i113 1
+R6
+R7
+Eha
+R8
+R9
+R0
+R1
+!i122 101
+R2
+Z15 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/halfadder.vhd
+Z16 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/halfadder.vhd
+l0
+L4 1
+VUjacdzm:5m>OI>gG^]ROQ3
+!s100 `gL5DFLTV@cTRiDn0lNaf2
+R3
+32
+R12
+!i10b 1
+Z17 !s108 1730577920.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/halfadder.vhd|
+Z19 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/halfadder.vhd|
+!i113 1
+R6
+R7
+Abehavioral
+R9
+R0
+R1
+Z20 DEx4 work 2 ha 0 22 Ujacdzm:5m>OI>gG^]ROQ3
+!i122 101
+l14
+Z21 L13 5
+Z22 Vo[H23UJ_moFN5g:I388Lm2
+Z23 !s100 hXOl3<6ZNB;;4jMcjReSg2
+R3
+32
+R12
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R6
+R7
+Esqc
+Z24 w1730577908
+Z25 DPx4 work 9 adder_pkg 0 22 DCf0QlJJzfUMgS>a=CZ:P1
+Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R0
+R1
+!i122 96
+R2
+Z27 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd
+Z28 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd
+l0
+L6 1
+VFXm42`bVYDYdo1Id5U@DA0
+!s100 5X3cb6>gX=^WcZ6TA4ShV1
+R3
+33
+R4
+!i10b 1
+R5
+Z29 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd|
+Z30 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC.vhd|
+!i113 1
+Z31 o-work work -2008 -explicit
+R7
+Abehavioral
+R25
+R26
+R0
+R1
+DEx4 work 3 sqc 0 22 FXm42`bVYDYdo1Id5U@DA0
+!i122 96
+l31
+L17 84
+VXi^nKb`9ZhUUbKGe2W^<m3
+!s100 4DjfGI[mPA3iDZIeifW`T1
+R3
+33
+R4
+!i10b 1
+R5
+R29
+R30
+!i113 1
+R31
+R7
+Esqc_tb
+Z32 w1730577811
+R26
+R0
+R1
+!i122 97
+R2
+Z33 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC_tb.vhd
+Z34 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC_tb.vhd
+l0
+L5 1
+V362NbczUzaDm^2GcJ3T2@1
+!s100 DmN5U57Pk@`R]dJN`nU4^1
+R3
+32
+R4
+!i10b 1
+R5
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC_tb.vhd|
+Z36 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z2/24bitSQC_tb.vhd|
+!i113 1
+R6
+R7
+Abench
+R26
+R0
+R1
+DEx4 work 6 sqc_tb 0 22 362NbczUzaDm^2GcJ3T2@1
+!i122 97
+l30
+L8 66
+V:X^Kl0IYZJeCE4GIi8;RC3
+!s100 1]5=fd4HF1dOLPSZoI=j[3
+R3
+32
+R4
+!i10b 1
+R5
+R35
+R36
+!i113 1
+R6
+R7
