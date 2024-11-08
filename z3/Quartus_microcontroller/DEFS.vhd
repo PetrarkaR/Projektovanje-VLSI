@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all; 
+
+package DEFS is
+	constant load    : std_logic_vector(4 downto 0) := ("00000"); 
+	constant setf    : std_logic_vector(4 downto 0) := ("00001"); 
+	constant clrf    : std_logic_vector(4 downto 0) := ("00010");
+	constant add : std_logic_vector(4 downto 0) := ("00011");
+	constant addc : std_logic_vector(4 downto 0) := ("00100");
+	constant sub_op  : std_logic_vector(4 downto 0) := ("00101"); 
+	constant subc  : std_logic_vector(4 downto 0) := ("00110");
+	constant rol_op   : std_logic_vector(4 downto 0) := ("00111");
+	constant rolc  : std_logic_vector(4 downto 0) := ("01000");
+	constant ror_op    : std_logic_vector(4 downto 0) := ("01001");
+	constant rorc   : std_logic_vector(4 downto 0) := ("01010");
+	constant and_op  : std_logic_vector(4 downto 0) := ("01011");
+	constant or_op     : std_logic_vector(4 downto 0) := ("01100");
+	constant xor_op     : std_logic_vector(4 downto 0) := ("01101");
+	constant not_op    : std_logic_vector(4 downto 0) := ("01110");
+	constant loadl    : std_logic_vector(4 downto 0) := ("01111");	
+	constant store    : std_logic_vector(4 downto 0) := ("10000");	
+	constant read  : std_logic_vector(4 downto 0) := ("10001");
+	constant write  : std_logic_vector(4 downto 0) := ("10010");
+	constant jnf : std_logic_vector(4 downto 0) := ("10011");
+	constant jf : std_logic_vector(4 downto 0) := ("10100");
+	constant jnz  : std_logic_vector(4 downto 0) := ("10101"); 
+	constant jz  : std_logic_vector(4 downto 0) := ("10110");
+	constant jmp   : std_logic_vector(4 downto 0) := ("10111");		
+	constant nop     : std_logic_vector(4 downto 0) := ("11000");
+end package DEFS;

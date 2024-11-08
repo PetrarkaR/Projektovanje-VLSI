@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Thu Nov 25 11:16:46 2021
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : MIcrocontroller
+Top-level Entity Name : microcontroller
+Family : Cyclone II
+Device : EP2C20F484C7
+Power Models : Final
+Total Thermal Power Dissipation : 72.54 mW
+Core Dynamic Thermal Power Dissipation : 0.73 mW
+Core Static Thermal Power Dissipation : 47.36 mW
+I/O Thermal Power Dissipation : 24.46 mW
+Power Estimation Confidence : High: user provided sufficient toggle rate data

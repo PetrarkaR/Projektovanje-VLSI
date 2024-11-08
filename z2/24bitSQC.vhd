@@ -19,6 +19,8 @@ ARCHITECTURE Behavioral OF SQC IS
     SIGNAL entryA : STD_LOGIC_VECTOR(35 DOWNTO 0);
     SIGNAL registerA : STD_LOGIC_VECTOR(35 DOWNTO 0);
     SIGNAL registerB : STD_LOGIC_VECTOR(11 DOWNTO 0);
+    SIGNAL registerBt : STD_LOGIC_VECTOR(12 DOWNTO 0);
+
     SIGNAL minuend : STD_LOGIC_VECTOR(13 DOWNTO 0);
     SIGNAL subtrahend : STD_LOGIC_VECTOR(13 DOWNTO 0);
     SIGNAL difference : STD_LOGIC_VECTOR(13 DOWNTO 0);
@@ -30,11 +32,13 @@ ARCHITECTURE Behavioral OF SQC IS
 
 BEGIN
     -- Output assignments
-    B <= registerB;
-    stop_root <= '1' when cnt = 11 and calculating = '1' else '0';
+    B<=registerB;
+    registerBt<=registerB&'0';
+
+    stop_root <= '1' when cnt = 12 and calculating = '1' else '0';
     
     -- Initial expansion of input A
-    expandedA <= A & zeroes;
+    expandedA <= zeroes & A;
     
     -- Prepare minuend and subtrahend
     minuend <= registerA(35 downto 22);
@@ -56,7 +60,7 @@ BEGIN
                 registerA <= expandedA;
                 registerB <= (others => '0');
             elsif calculating = '1' then
-                if cnt < 11 then
+                if cnt < 12 then
                     -- Perform iteration
                     if cout = '1' then
                         -- If subtraction was successful
@@ -76,7 +80,6 @@ BEGIN
         end if;
     end process;
 
-    -- Subtractor implementation
     subtractorFirstBit: component FA port map(
         A => minuend(0),
         B => subtrahend(0),

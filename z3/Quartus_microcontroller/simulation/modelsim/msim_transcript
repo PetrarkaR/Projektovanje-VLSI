@@ -1,0 +1,169 @@
+# Reading D:/altera/11.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MIcrocontroller_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying D:\altera\11.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\11.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {MIcrocontroller.vho}
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading package vital_primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity microcontroller
+# -- Compiling architecture structure of microcontroller
+# 
+# vcom -93 -work work {D:/Korisnici/Borko/MALTA_MCAST/ZaMaltu/Quartus_microcontroller/microcontroller_TB.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity microcontroller_tb
+# -- Compiling architecture tb_architecture of microcontroller_tb
+# ** Warning: [4] D:/Korisnici/Borko/MALTA_MCAST/ZaMaltu/Quartus_microcontroller/microcontroller_TB.vhd(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /UUT=MIcrocontroller_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc" microcontroller
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=MIcrocontroller_vhd.sdo -t 1ps microcontroller 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.microcontroller(structure)
+# SDF 6.6d Compiler 2010.11 Nov  2 2010
+# 
+# Loading cycloneii.cycloneii_routing_wire(behave)
+# Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
+# Loading cycloneii.cycloneii_and1(altvital)
+# Loading cycloneii.cycloneii_ram_block(block_arch)
+# Loading cycloneii.cycloneii_ram_register(reg_arch)
+# Loading cycloneii.cycloneii_ram_pulse_generator(pgen_arch)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
+# Loading cycloneii.cycloneii_ena_reg(behave)
+# Loading instances from MIcrocontroller_vhd.sdo
+# ** Error: (vsim-SDF-3250) MIcrocontroller_vhd.sdo(0): Failed to find INSTANCE '/UUT'.
+# ** Error: (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# ** Error: (vsim-SDF-3250) MIcrocontroller_vhd.sdo(0): Failed to find INSTANCE '/UUT'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./MIcrocontroller_run_msim_gate_vhdl.do PAUSED at line 12
+source MIcrocontroller_dump_all_vcd_nodes.tcl
+# 0
+vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=MIcrocontroller_vhd.sdo -t 1ps work.microcontroller_tb(tb_architecture)
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=MIcrocontroller_vhd.sdo -t 1ps work.microcontroller_tb(tb_architecture) 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.microcontroller_tb(tb_architecture)
+# SDF 6.6d Compiler 2010.11 Nov  2 2010
+# 
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.microcontroller(structure)
+# Loading cycloneii.cycloneii_routing_wire(behave)
+# Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
+# Loading cycloneii.cycloneii_and1(altvital)
+# Loading cycloneii.cycloneii_ram_block(block_arch)
+# Loading cycloneii.cycloneii_ram_register(reg_arch)
+# Loading cycloneii.cycloneii_ram_pulse_generator(pgen_arch)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
+# Loading cycloneii.cycloneii_ena_reg(behave)
+# Loading instances from MIcrocontroller_vhd.sdo
+# Loading timing data from MIcrocontroller_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /microcontroller_tb  File: D:/Korisnici/Borko/MALTA_MCAST/ZaMaltu/Quartus_microcontroller/microcontroller_TB.vhd
+source MIcrocontroller_dump_all_vcd_nodes.tcl
+# ** Error: (vsim-3400) The default VCD output file "MIcrocontroller.vcd" is already opened. Use the 'vcd files' command to create multiple VCD files.
+# 
+run -all
+quit -sim
+vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=MIcrocontroller_vhd.sdo -sdfnowarn -t 1ps work.microcontroller_tb(tb_architecture)
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=MIcrocontroller_vhd.sdo -sdfnowarn -t 1ps work.microcontroller_tb(tb_architecture) 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.microcontroller(structure)
+# Loading cycloneii.cycloneii_routing_wire(behave)
+# Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
+# Loading cycloneii.cycloneii_and1(altvital)
+# Loading cycloneii.cycloneii_ram_block(block_arch)
+# Loading cycloneii.cycloneii_ram_register(reg_arch)
+# Loading cycloneii.cycloneii_ram_pulse_generator(pgen_arch)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
+# Loading cycloneii.cycloneii_ena_reg(behave)
+# Loading instances from MIcrocontroller_vhd.sdo
+# Loading timing data from MIcrocontroller_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /microcontroller_tb  File: D:/Korisnici/Borko/MALTA_MCAST/ZaMaltu/Quartus_microcontroller/microcontroller_TB.vhd
+source MIcrocontroller_dump_all_vcd_nodes.tcl
+# 0
+run -all
+quit -sim
+vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=MIcrocontroller_vhd.sdo -sdfnowarn -t 1ps work.microcontroller_tb(tb_architecture)
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=MIcrocontroller_vhd.sdo -sdfnowarn -t 1ps work.microcontroller_tb(tb_architecture) 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.microcontroller(structure)
+# Loading cycloneii.cycloneii_routing_wire(behave)
+# Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
+# Loading cycloneii.cycloneii_and1(altvital)
+# Loading cycloneii.cycloneii_ram_block(block_arch)
+# Loading cycloneii.cycloneii_ram_register(reg_arch)
+# Loading cycloneii.cycloneii_ram_pulse_generator(pgen_arch)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
+# Loading cycloneii.cycloneii_ena_reg(behave)
+# Loading instances from MIcrocontroller_vhd.sdo
+# Loading timing data from MIcrocontroller_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /microcontroller_tb  File: D:/Korisnici/Borko/MALTA_MCAST/ZaMaltu/Quartus_microcontroller/microcontroller_TB.vhd
+source MIcrocontroller_dump_all_vcd_nodes.tcl
+# 0
+run -all
+quit -sim

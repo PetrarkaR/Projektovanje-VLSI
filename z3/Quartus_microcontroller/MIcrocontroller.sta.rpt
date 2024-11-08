@@ -1,0 +1,1382 @@
+TimeQuest Timing Analyzer report for MIcrocontroller
+Thu Nov 25 11:16:49 2021
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Slow Model Fmax Summary
+  7. Slow Model Setup Summary
+  8. Slow Model Hold Summary
+  9. Slow Model Recovery Summary
+ 10. Slow Model Removal Summary
+ 11. Slow Model Minimum Pulse Width Summary
+ 12. Slow Model Setup: 'Clk'
+ 13. Slow Model Hold: 'Clk'
+ 14. Slow Model Minimum Pulse Width: 'Clk'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Fast Model Setup Summary
+ 20. Fast Model Hold Summary
+ 21. Fast Model Recovery Summary
+ 22. Fast Model Removal Summary
+ 23. Fast Model Minimum Pulse Width Summary
+ 24. Fast Model Setup: 'Clk'
+ 25. Fast Model Hold: 'Clk'
+ 26. Fast Model Minimum Pulse Width: 'Clk'
+ 27. Setup Times
+ 28. Hold Times
+ 29. Clock to Output Times
+ 30. Minimum Clock to Output Times
+ 31. Multicorner Timing Analysis Summary
+ 32. Setup Times
+ 33. Hold Times
+ 34. Clock to Output Times
+ 35. Minimum Clock to Output Times
+ 36. Setup Transfers
+ 37. Hold Transfers
+ 38. Report TCCS
+ 39. Report RSKM
+ 40. Unconstrained Paths
+ 41. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; MIcrocontroller                                    ;
+; Device Family      ; Cyclone II                                         ;
+; Device Name        ; EP2C20F484C7                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------+
+; SDC File List                                           ;
++---------------------+--------+--------------------------+
+; SDC File Path       ; Status ; Read at                  ;
++---------------------+--------+--------------------------+
+; MIcrocontroller.sdc ; OK     ; Thu Nov 25 11:16:48 2021 ;
++---------------------+--------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+---------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period  ; Frequency ; Rise  ; Fall    ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+---------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clk        ; Base ; 200.000 ; 5.0 MHz   ; 0.000 ; 100.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+---------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++-------------------------------------------------+
+; Slow Model Fmax Summary                         ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 25.23 MHz ; 25.23 MHz       ; Clk        ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; Clk   ; 80.183 ; 0.000         ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; Clk   ; 0.435 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; Clk   ; 97.436 ; 0.000                 ;
++-------+--------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'Clk'                                                                                                                                                                                     ;
++--------+----------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                                ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.183 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 16.140     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.311 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 16.016     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 80.980 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 15.348     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.154 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 15.173     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.320 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 15.003     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.555 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.772     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.569 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -3.715     ; 14.754     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 81.603 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -3.711     ; 14.724     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 82.190 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -3.710     ; 14.138     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.038 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 11.282     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 85.978 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -3.718     ; 10.342     ;
+; 86.143 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; MAR:U5|MAR_reg[4] ; Clk          ; Clk         ; 100.000      ; -3.726     ; 10.169     ;
++--------+----------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'Clk'                                                                                                                         ;
++-------+--------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                      ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.435 ; controller:U2|present_state.I3 ; controller:U2|present_state.I10 ; Clk          ; Clk         ; 0.000        ; 0.460      ; 1.181      ;
+; 0.445 ; Debounce:U8|Int_req            ; Debounce:U8|Int_req             ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; ALU:U3|acc[8]                  ; ALU:U3|acc[8]                   ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.583 ; controller:U2|present_state.I1 ; controller:U2|present_state.I2  ; Clk          ; Clk         ; 0.000        ; 0.460      ; 1.329      ;
+; 0.618 ; controller:U2|present_state.I3 ; controller:U2|present_state.I5  ; Clk          ; Clk         ; 0.000        ; 0.460      ; 1.364      ;
+; 0.624 ; Debounce:U8|counter[19]        ; Debounce:U8|counter[19]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.910      ;
+; 0.636 ; controller:U2|cnt[8]           ; controller:U2|cnt[8]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.922      ;
+; 0.639 ; controller:U2|cnt[8]           ; controller:U2|present_state.R0  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.925      ;
+; 0.663 ; Debounce:U8|Int_req            ; pc:U7|pc_val[5]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.949      ;
+; 0.669 ; Debounce:U8|Int_req            ; pc:U7|pc_val[6]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.955      ;
+; 0.670 ; Debounce:U8|Int_req            ; pc:U7|pc_val[3]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.956      ;
+; 0.670 ; Debounce:U8|Int_req            ; pc:U7|pc_val[7]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.956      ;
+; 0.834 ; Reg:U12|Q[5]                   ; Reg:U11|Q[5]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.120      ;
+; 0.885 ; IR:U4|IR_reg[6]                ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.171      ;
+; 0.897 ; controller:U2|present_state.I3 ; controller:U2|present_state.I4  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.183      ;
+; 0.914 ; pc:U7|reset_int_req            ; Debounce:U8|Int_req             ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.200      ;
+; 0.957 ; Debounce:U8|Int_req            ; pc:U7|pc_val[4]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.243      ;
+; 0.968 ; Debounce:U8|counter[10]        ; Debounce:U8|counter[10]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.254      ;
+; 0.972 ; Debounce:U8|counter[1]         ; Debounce:U8|counter[1]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.258      ;
+; 0.975 ; Debounce:U8|counter[11]        ; Debounce:U8|counter[11]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.261      ;
+; 0.976 ; controller:U2|cnt[1]           ; controller:U2|cnt[1]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.262      ;
+; 0.979 ; Debounce:U8|counter[3]         ; Debounce:U8|counter[3]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.265      ;
+; 0.980 ; controller:U2|cnt[7]           ; controller:U2|cnt[7]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.266      ;
+; 0.980 ; Debounce:U8|counter[5]         ; Debounce:U8|counter[5]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.266      ;
+; 0.983 ; controller:U2|cnt[3]           ; controller:U2|cnt[3]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.269      ;
+; 0.984 ; controller:U2|cnt[5]           ; controller:U2|cnt[5]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.270      ;
+; 0.984 ; Debounce:U8|counter[7]         ; Debounce:U8|counter[7]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.270      ;
+; 0.984 ; Debounce:U8|counter[12]        ; Debounce:U8|counter[12]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.270      ;
+; 0.984 ; Debounce:U8|counter[14]        ; Debounce:U8|counter[14]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.270      ;
+; 0.985 ; Debounce:U8|counter[8]         ; Debounce:U8|counter[8]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.271      ;
+; 0.985 ; Debounce:U8|counter[9]         ; Debounce:U8|counter[9]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.271      ;
+; 0.985 ; Debounce:U8|counter[17]        ; Debounce:U8|counter[17]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.271      ;
+; 0.991 ; MAR:U5|MAR_reg[7]              ; IR:U4|IR_reg[5]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.277      ;
+; 1.000 ; IR:U4|IR_reg[7]                ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.286      ;
+; 1.007 ; Reg:U12|Q[4]                   ; Reg:U11|Q[4]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.293      ;
+; 1.010 ; controller:U2|cnt[0]           ; controller:U2|cnt[0]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.296      ;
+; 1.010 ; Debounce:U8|Int_req            ; pc:U7|reset_int_req             ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.296      ;
+; 1.014 ; Reg:U12|Q[7]                   ; Reg:U11|Q[7]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.300      ;
+; 1.019 ; Debounce:U8|counter[0]         ; Debounce:U8|counter[0]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.305      ;
+; 1.019 ; Reg:U12|Q[1]                   ; Reg:U11|Q[1]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.305      ;
+; 1.021 ; controller:U2|cnt[2]           ; controller:U2|cnt[2]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.307      ;
+; 1.021 ; Debounce:U8|counter[2]         ; Debounce:U8|counter[2]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.307      ;
+; 1.022 ; controller:U2|cnt[4]           ; controller:U2|cnt[4]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.308      ;
+; 1.022 ; Debounce:U8|counter[4]         ; Debounce:U8|counter[4]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.308      ;
+; 1.022 ; Debounce:U8|counter[6]         ; Debounce:U8|counter[6]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.308      ;
+; 1.022 ; Debounce:U8|counter[13]        ; Debounce:U8|counter[13]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.308      ;
+; 1.023 ; controller:U2|cnt[6]           ; controller:U2|cnt[6]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.309      ;
+; 1.023 ; Debounce:U8|counter[15]        ; Debounce:U8|counter[15]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.309      ;
+; 1.023 ; Debounce:U8|counter[16]        ; Debounce:U8|counter[16]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.309      ;
+; 1.042 ; Debounce:U8|counter[18]        ; Debounce:U8|counter[18]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.328      ;
+; 1.046 ; Reg:U12|Q[2]                   ; Reg:U11|Q[2]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.332      ;
+; 1.078 ; controller:U2|present_state.I3 ; controller:U2|present_state.I8  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.364      ;
+; 1.108 ; Debounce:U8|Int_req            ; pc:U7|pc_val[2]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.394      ;
+; 1.108 ; Debounce:U8|Int_req            ; pc:U7|pc_val[0]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.394      ;
+; 1.108 ; Debounce:U8|Int_req            ; pc:U7|pc_val[1]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.394      ;
+; 1.124 ; PORT_IN[4]                     ; Reg:U12|Q[4]                    ; Clk          ; Clk         ; 0.000        ; 2.857      ; 3.267      ;
+; 1.134 ; IR:U4|IR_reg[7]                ; controller:U2|present_state.I10 ; Clk          ; Clk         ; 0.000        ; 0.466      ; 1.886      ;
+; 1.139 ; PORT_IN[7]                     ; MAR:U5|MAR_reg[7]               ; Clk          ; Clk         ; 0.000        ; 2.852      ; 3.277      ;
+; 1.169 ; controller:U2|present_state.R0 ; controller:U2|present_state.R1  ; Clk          ; Clk         ; 0.000        ; 0.467      ; 1.922      ;
+; 1.258 ; MAR:U5|MAR_reg[5]              ; MAR:U5|MAR_reg[6]               ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.544      ;
+; 1.267 ; controller:U2|cnt[7]           ; controller:U2|present_state.R0  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.553      ;
+; 1.274 ; IR:U4|IR_reg[3]                ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.560      ;
+; 1.400 ; Debounce:U8|counter[10]        ; Debounce:U8|counter[11]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.686      ;
+; 1.407 ; Debounce:U8|counter[11]        ; Debounce:U8|counter[12]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.693      ;
+; 1.411 ; controller:U2|present_state.R1 ; controller:U2|present_state.I1  ; Clk          ; Clk         ; 0.000        ; -0.460     ; 1.237      ;
+; 1.411 ; Debounce:U8|counter[3]         ; Debounce:U8|counter[4]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.697      ;
+; 1.412 ; controller:U2|cnt[7]           ; controller:U2|cnt[8]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.698      ;
+; 1.412 ; Debounce:U8|counter[5]         ; Debounce:U8|counter[6]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.698      ;
+; 1.415 ; controller:U2|cnt[3]           ; controller:U2|cnt[4]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.701      ;
+; 1.416 ; Debounce:U8|counter[7]         ; Debounce:U8|counter[8]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.702      ;
+; 1.416 ; Debounce:U8|counter[12]        ; Debounce:U8|counter[13]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.702      ;
+; 1.416 ; controller:U2|cnt[5]           ; controller:U2|cnt[6]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.702      ;
+; 1.416 ; Debounce:U8|counter[14]        ; Debounce:U8|counter[15]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.702      ;
+; 1.417 ; Debounce:U8|counter[8]         ; Debounce:U8|counter[9]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.703      ;
+; 1.423 ; controller:U2|cnt[6]           ; controller:U2|present_state.R0  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.709      ;
+; 1.430 ; IR:U4|IR_reg[4]                ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.435 ; Debounce:U8|Taster1            ; Debounce:U8|Int_req             ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.721      ;
+; 1.440 ; controller:U2|cnt[0]           ; controller:U2|cnt[1]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.726      ;
+; 1.449 ; Debounce:U8|counter[0]         ; Debounce:U8|counter[1]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.735      ;
+; 1.453 ; controller:U2|cnt[0]           ; controller:U2|present_state.R0  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.739      ;
+; 1.454 ; Debounce:U8|counter[2]         ; Debounce:U8|counter[3]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.740      ;
+; 1.454 ; controller:U2|cnt[2]           ; controller:U2|cnt[3]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.740      ;
+; 1.455 ; Debounce:U8|counter[4]         ; Debounce:U8|counter[5]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.741      ;
+; 1.455 ; controller:U2|cnt[4]           ; controller:U2|cnt[5]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.741      ;
+; 1.455 ; Debounce:U8|counter[6]         ; Debounce:U8|counter[7]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.741      ;
+; 1.455 ; Debounce:U8|counter[13]        ; Debounce:U8|counter[14]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.741      ;
+; 1.456 ; controller:U2|cnt[6]           ; controller:U2|cnt[7]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.456 ; Debounce:U8|counter[16]        ; Debounce:U8|counter[17]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.456 ; Debounce:U8|counter[15]        ; Debounce:U8|counter[16]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.475 ; Debounce:U8|counter[18]        ; Debounce:U8|counter[19]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.761      ;
+; 1.480 ; Debounce:U8|counter[10]        ; Debounce:U8|counter[12]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.766      ;
+; 1.487 ; ALU:U3|acc[0]                  ; ALU:U3|acc[0]                   ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.773      ;
+; 1.487 ; Debounce:U8|counter[11]        ; Debounce:U8|counter[13]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.773      ;
+; 1.490 ; controller:U2|present_state.I2 ; controller:U2|present_state.I3  ; Clk          ; Clk         ; 0.000        ; -0.460     ; 1.316      ;
+; 1.491 ; Debounce:U8|counter[3]         ; Debounce:U8|counter[5]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.777      ;
+; 1.492 ; controller:U2|present_state.I3 ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; -0.006     ; 1.772      ;
+; 1.492 ; Debounce:U8|counter[5]         ; Debounce:U8|counter[7]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.778      ;
+; 1.495 ; controller:U2|cnt[3]           ; controller:U2|cnt[5]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.781      ;
+; 1.496 ; Debounce:U8|counter[7]         ; Debounce:U8|counter[9]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.782      ;
+; 1.496 ; Debounce:U8|counter[12]        ; Debounce:U8|counter[14]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.782      ;
++-------+--------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'Clk'                                                                                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------------------------------+
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg10 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg10 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg11 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg11 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg12 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg12 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg2  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg2  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg3  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg3  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg5  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg5  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg6  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg6  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg7  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg7  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg8  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg8  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg9  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg9  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a11~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a11~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a12~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a12~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a13~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a13~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a14~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a14~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a15~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a15~porta_memory_reg0 ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a1~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a1~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a2~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a2~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a3~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a3~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a4~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a4~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a5~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a5~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a6~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a6~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a7~porta_memory_reg0  ;
+; 97.436 ; 100.000      ; 2.564          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a7~porta_memory_reg0  ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[0]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[0]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[1]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[1]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[2]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[2]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[3]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[3]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[4]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[4]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[5]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[5]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[6]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[6]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[7]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[7]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[8]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[8]                                                                                            ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|Enable                                                                                       ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|Enable                                                                                       ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|Int_req                                                                                      ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|Int_req                                                                                      ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|Taster1                                                                                      ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|Taster1                                                                                      ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|counter[0]                                                                                   ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|counter[0]                                                                                   ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|counter[10]                                                                                  ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|counter[10]                                                                                  ;
+; 98.889 ; 100.000      ; 1.111          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|counter[11]                                                                                  ;
+; 98.889 ; 100.000      ; 1.111          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|counter[11]                                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; Int_code[*]  ; Clk        ; 1.439  ; 1.439  ; Rise       ; Clk             ;
+;  Int_code[0] ; Clk        ; 1.302  ; 1.302  ; Rise       ; Clk             ;
+;  Int_code[1] ; Clk        ; 1.439  ; 1.439  ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 10.828 ; 10.828 ; Rise       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; 9.154  ; 9.154  ; Rise       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; 10.828 ; 10.828 ; Rise       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; 8.611  ; 8.611  ; Rise       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; 10.800 ; 10.800 ; Rise       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; 9.957  ; 9.957  ; Rise       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; 8.962  ; 8.962  ; Rise       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; 8.511  ; 8.511  ; Rise       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; 7.281  ; 7.281  ; Rise       ; Clk             ;
+; Taster       ; Clk        ; 7.849  ; 7.849  ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 0.196  ; 0.196  ; Fall       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; -0.639 ; -0.639 ; Fall       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; 0.196  ; 0.196  ; Fall       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; -0.490 ; -0.490 ; Fall       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; -0.788 ; -0.788 ; Fall       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; -1.005 ; -1.005 ; Fall       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; -1.320 ; -1.320 ; Fall       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; -1.456 ; -1.456 ; Fall       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; -1.922 ; -1.922 ; Fall       ; Clk             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; Int_code[*]  ; Clk        ; -0.650 ; -0.650 ; Rise       ; Clk             ;
+;  Int_code[0] ; Clk        ; -0.650 ; -0.650 ; Rise       ; Clk             ;
+;  Int_code[1] ; Clk        ; -0.959 ; -0.959 ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; -0.124 ; -0.124 ; Rise       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; -0.753 ; -0.753 ; Rise       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; -2.054 ; -2.054 ; Rise       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; -1.153 ; -1.153 ; Rise       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; -1.614 ; -1.614 ; Rise       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; -0.124 ; -0.124 ; Rise       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; -1.065 ; -1.065 ; Rise       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; -0.929 ; -0.929 ; Rise       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; -0.139 ; -0.139 ; Rise       ; Clk             ;
+; Taster       ; Clk        ; -4.766 ; -4.766 ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 2.212  ; 2.212  ; Fall       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; 0.929  ; 0.929  ; Fall       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; 0.094  ; 0.094  ; Fall       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; 0.780  ; 0.780  ; Fall       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; 1.078  ; 1.078  ; Fall       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; 1.295  ; 1.295  ; Fall       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; 1.610  ; 1.610  ; Fall       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; 1.746  ; 1.746  ; Fall       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; 2.212  ; 2.212  ; Fall       ; Clk             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Seg0[*]   ; Clk        ; 9.233 ; 9.233 ; Rise       ; Clk             ;
+;  Seg0[0]  ; Clk        ; 9.039 ; 9.039 ; Rise       ; Clk             ;
+;  Seg0[1]  ; Clk        ; 9.032 ; 9.032 ; Rise       ; Clk             ;
+;  Seg0[2]  ; Clk        ; 9.206 ; 9.206 ; Rise       ; Clk             ;
+;  Seg0[3]  ; Clk        ; 9.212 ; 9.212 ; Rise       ; Clk             ;
+;  Seg0[4]  ; Clk        ; 9.210 ; 9.210 ; Rise       ; Clk             ;
+;  Seg0[5]  ; Clk        ; 9.228 ; 9.228 ; Rise       ; Clk             ;
+;  Seg0[6]  ; Clk        ; 9.233 ; 9.233 ; Rise       ; Clk             ;
+; Seg1[*]   ; Clk        ; 9.549 ; 9.549 ; Rise       ; Clk             ;
+;  Seg1[0]  ; Clk        ; 8.646 ; 8.646 ; Rise       ; Clk             ;
+;  Seg1[1]  ; Clk        ; 8.554 ; 8.554 ; Rise       ; Clk             ;
+;  Seg1[2]  ; Clk        ; 9.532 ; 9.532 ; Rise       ; Clk             ;
+;  Seg1[3]  ; Clk        ; 8.572 ; 8.572 ; Rise       ; Clk             ;
+;  Seg1[4]  ; Clk        ; 8.398 ; 8.398 ; Rise       ; Clk             ;
+;  Seg1[5]  ; Clk        ; 9.549 ; 9.549 ; Rise       ; Clk             ;
+;  Seg1[6]  ; Clk        ; 8.597 ; 8.597 ; Rise       ; Clk             ;
+; Seg2[*]   ; Clk        ; 8.981 ; 8.981 ; Rise       ; Clk             ;
+;  Seg2[0]  ; Clk        ; 8.343 ; 8.343 ; Rise       ; Clk             ;
+;  Seg2[1]  ; Clk        ; 8.596 ; 8.596 ; Rise       ; Clk             ;
+;  Seg2[2]  ; Clk        ; 8.949 ; 8.949 ; Rise       ; Clk             ;
+;  Seg2[3]  ; Clk        ; 8.981 ; 8.981 ; Rise       ; Clk             ;
+;  Seg2[4]  ; Clk        ; 8.882 ; 8.882 ; Rise       ; Clk             ;
+;  Seg2[5]  ; Clk        ; 8.938 ; 8.938 ; Rise       ; Clk             ;
+;  Seg2[6]  ; Clk        ; 8.948 ; 8.948 ; Rise       ; Clk             ;
+; Seg3[*]   ; Clk        ; 8.907 ; 8.907 ; Rise       ; Clk             ;
+;  Seg3[0]  ; Clk        ; 8.691 ; 8.691 ; Rise       ; Clk             ;
+;  Seg3[1]  ; Clk        ; 8.907 ; 8.907 ; Rise       ; Clk             ;
+;  Seg3[2]  ; Clk        ; 8.884 ; 8.884 ; Rise       ; Clk             ;
+;  Seg3[3]  ; Clk        ; 8.224 ; 8.224 ; Rise       ; Clk             ;
+;  Seg3[4]  ; Clk        ; 8.346 ; 8.346 ; Rise       ; Clk             ;
+;  Seg3[5]  ; Clk        ; 8.779 ; 8.779 ; Rise       ; Clk             ;
+;  Seg3[6]  ; Clk        ; 8.749 ; 8.749 ; Rise       ; Clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Seg0[*]   ; Clk        ; 7.359 ; 7.359 ; Rise       ; Clk             ;
+;  Seg0[0]  ; Clk        ; 7.359 ; 7.359 ; Rise       ; Clk             ;
+;  Seg0[1]  ; Clk        ; 8.147 ; 8.147 ; Rise       ; Clk             ;
+;  Seg0[2]  ; Clk        ; 8.326 ; 8.326 ; Rise       ; Clk             ;
+;  Seg0[3]  ; Clk        ; 8.327 ; 8.327 ; Rise       ; Clk             ;
+;  Seg0[4]  ; Clk        ; 8.292 ; 8.292 ; Rise       ; Clk             ;
+;  Seg0[5]  ; Clk        ; 8.317 ; 8.317 ; Rise       ; Clk             ;
+;  Seg0[6]  ; Clk        ; 8.353 ; 8.353 ; Rise       ; Clk             ;
+; Seg1[*]   ; Clk        ; 7.786 ; 7.786 ; Rise       ; Clk             ;
+;  Seg1[0]  ; Clk        ; 8.005 ; 8.005 ; Rise       ; Clk             ;
+;  Seg1[1]  ; Clk        ; 7.995 ; 7.995 ; Rise       ; Clk             ;
+;  Seg1[2]  ; Clk        ; 7.987 ; 7.987 ; Rise       ; Clk             ;
+;  Seg1[3]  ; Clk        ; 7.940 ; 7.940 ; Rise       ; Clk             ;
+;  Seg1[4]  ; Clk        ; 7.968 ; 7.968 ; Rise       ; Clk             ;
+;  Seg1[5]  ; Clk        ; 8.042 ; 8.042 ; Rise       ; Clk             ;
+;  Seg1[6]  ; Clk        ; 7.786 ; 7.786 ; Rise       ; Clk             ;
+; Seg2[*]   ; Clk        ; 7.730 ; 7.730 ; Rise       ; Clk             ;
+;  Seg2[0]  ; Clk        ; 7.730 ; 7.730 ; Rise       ; Clk             ;
+;  Seg2[1]  ; Clk        ; 8.000 ; 8.000 ; Rise       ; Clk             ;
+;  Seg2[2]  ; Clk        ; 8.353 ; 8.353 ; Rise       ; Clk             ;
+;  Seg2[3]  ; Clk        ; 8.140 ; 8.140 ; Rise       ; Clk             ;
+;  Seg2[4]  ; Clk        ; 8.103 ; 8.103 ; Rise       ; Clk             ;
+;  Seg2[5]  ; Clk        ; 8.126 ; 8.126 ; Rise       ; Clk             ;
+;  Seg2[6]  ; Clk        ; 8.351 ; 8.351 ; Rise       ; Clk             ;
+; Seg3[*]   ; Clk        ; 7.627 ; 7.627 ; Rise       ; Clk             ;
+;  Seg3[0]  ; Clk        ; 8.091 ; 8.091 ; Rise       ; Clk             ;
+;  Seg3[1]  ; Clk        ; 8.510 ; 8.510 ; Rise       ; Clk             ;
+;  Seg3[2]  ; Clk        ; 8.285 ; 8.285 ; Rise       ; Clk             ;
+;  Seg3[3]  ; Clk        ; 7.627 ; 7.627 ; Rise       ; Clk             ;
+;  Seg3[4]  ; Clk        ; 7.720 ; 7.720 ; Rise       ; Clk             ;
+;  Seg3[5]  ; Clk        ; 8.381 ; 8.381 ; Rise       ; Clk             ;
+;  Seg3[6]  ; Clk        ; 8.347 ; 8.347 ; Rise       ; Clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; Clk   ; 91.881 ; 0.000         ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; Clk   ; 0.165 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; Clk   ; 97.500 ; 0.000                 ;
++-------+--------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'Clk'                                                                                                                                                                                     ;
++--------+----------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                                ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 91.881 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[8]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.616      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.020 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[5]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.481      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.283 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[7]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.214      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.298 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[3]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 6.204      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.363 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[1]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.138      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.438 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[4]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.063      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.463 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[0]     ; Clk          ; Clk         ; 100.000      ; -1.535     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.467 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[6]     ; Clk          ; Clk         ; 100.000      ; -1.531     ; 6.034      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 92.652 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; ALU:U3|acc[2]     ; Clk          ; Clk         ; 100.000      ; -1.530     ; 5.850      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.633 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; pc:U7|pc_val[4]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.861      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.971 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ; pc:U7|pc_val[7]   ; Clk          ; Clk         ; 100.000      ; -1.538     ; 4.523      ;
+; 93.999 ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ; MAR:U5|MAR_reg[4] ; Clk          ; Clk         ; 100.000      ; -1.545     ; 4.488      ;
++--------+----------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'Clk'                                                                                                                          ;
++-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.165 ; controller:U2|present_state.R1  ; controller:U2|present_state.I1  ; Clk          ; Clk         ; 0.000        ; 0.199      ; 0.516      ;
+; 0.215 ; Debounce:U8|Int_req             ; Debounce:U8|Int_req             ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ALU:U3|acc[8]                   ; ALU:U3|acc[8]                   ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.229 ; controller:U2|present_state.I2  ; controller:U2|present_state.I3  ; Clk          ; Clk         ; 0.000        ; 0.199      ; 0.580      ;
+; 0.242 ; Debounce:U8|counter[19]         ; Debounce:U8|counter[19]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.394      ;
+; 0.249 ; controller:U2|cnt[8]            ; controller:U2|cnt[8]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.401      ;
+; 0.252 ; controller:U2|cnt[8]            ; controller:U2|present_state.R0  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.404      ;
+; 0.265 ; Debounce:U8|Int_req             ; pc:U7|pc_val[5]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.417      ;
+; 0.270 ; Debounce:U8|Int_req             ; pc:U7|pc_val[6]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.422      ;
+; 0.271 ; Debounce:U8|Int_req             ; pc:U7|pc_val[3]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.423      ;
+; 0.271 ; Debounce:U8|Int_req             ; pc:U7|pc_val[7]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.423      ;
+; 0.349 ; controller:U2|present_state.I3  ; controller:U2|present_state.I4  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.501      ;
+; 0.355 ; Debounce:U8|counter[10]         ; Debounce:U8|counter[10]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.507      ;
+; 0.359 ; Debounce:U8|counter[11]         ; Debounce:U8|counter[11]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.361 ; Debounce:U8|counter[1]          ; Debounce:U8|counter[1]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.363 ; Debounce:U8|counter[3]          ; Debounce:U8|counter[3]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; controller:U2|cnt[1]            ; controller:U2|cnt[1]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.516      ;
+; 0.364 ; Debounce:U8|counter[5]          ; Debounce:U8|counter[5]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.516      ;
+; 0.365 ; controller:U2|cnt[7]            ; controller:U2|cnt[7]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; pc:U7|reset_int_req             ; Debounce:U8|Int_req             ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.366 ; controller:U2|cnt[3]            ; controller:U2|cnt[3]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.518      ;
+; 0.366 ; IR:U4|IR_reg[6]                 ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.518      ;
+; 0.367 ; controller:U2|cnt[5]            ; controller:U2|cnt[5]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; Debounce:U8|counter[7]          ; Debounce:U8|counter[7]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; Debounce:U8|counter[8]          ; Debounce:U8|counter[8]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; Debounce:U8|counter[9]          ; Debounce:U8|counter[9]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; Debounce:U8|counter[12]         ; Debounce:U8|counter[12]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; Debounce:U8|counter[14]         ; Debounce:U8|counter[14]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; Reg:U12|Q[5]                    ; Reg:U11|Q[5]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.368 ; Debounce:U8|counter[17]         ; Debounce:U8|counter[17]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.520      ;
+; 0.369 ; controller:U2|cnt[0]            ; controller:U2|cnt[0]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.521      ;
+; 0.371 ; controller:U2|present_state.R1  ; IR:U4|IR_reg[5]                 ; Clk          ; Clk         ; 0.000        ; 0.196      ; 0.719      ;
+; 0.374 ; Debounce:U8|counter[0]          ; Debounce:U8|counter[0]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.526      ;
+; 0.374 ; MAR:U5|MAR_reg[7]               ; IR:U4|IR_reg[5]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.526      ;
+; 0.376 ; controller:U2|cnt[2]            ; controller:U2|cnt[2]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; Debounce:U8|counter[2]          ; Debounce:U8|counter[2]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.377 ; controller:U2|cnt[4]            ; controller:U2|cnt[4]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.529      ;
+; 0.377 ; Debounce:U8|counter[13]         ; Debounce:U8|counter[13]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.529      ;
+; 0.378 ; controller:U2|cnt[6]            ; controller:U2|cnt[6]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; Debounce:U8|counter[4]          ; Debounce:U8|counter[4]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; Debounce:U8|counter[6]          ; Debounce:U8|counter[6]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; Debounce:U8|counter[15]         ; Debounce:U8|counter[15]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; Debounce:U8|counter[16]         ; Debounce:U8|counter[16]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.385 ; Debounce:U8|Int_req             ; pc:U7|reset_int_req             ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.537      ;
+; 0.387 ; Debounce:U8|Int_req             ; pc:U7|pc_val[4]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.539      ;
+; 0.388 ; Debounce:U8|counter[18]         ; Debounce:U8|counter[18]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.540      ;
+; 0.388 ; IR:U4|IR_reg[7]                 ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.540      ;
+; 0.413 ; Reg:U12|Q[4]                    ; Reg:U11|Q[4]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.565      ;
+; 0.418 ; Reg:U12|Q[7]                    ; Reg:U11|Q[7]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.570      ;
+; 0.420 ; Reg:U12|Q[1]                    ; Reg:U11|Q[1]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.572      ;
+; 0.436 ; Reg:U12|Q[2]                    ; Reg:U11|Q[2]                    ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.588      ;
+; 0.464 ; controller:U2|present_state.I3  ; controller:U2|present_state.I8  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.616      ;
+; 0.465 ; MAR:U5|MAR_reg[5]               ; MAR:U5|MAR_reg[6]               ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.617      ;
+; 0.490 ; controller:U2|cnt[7]            ; controller:U2|present_state.R0  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.642      ;
+; 0.493 ; Debounce:U8|counter[10]         ; Debounce:U8|counter[11]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.645      ;
+; 0.494 ; controller:U2|present_state.R1  ; controller:U2|present_state.R0  ; Clk          ; Clk         ; 0.000        ; 0.192      ; 0.838      ;
+; 0.497 ; Debounce:U8|counter[11]         ; Debounce:U8|counter[12]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.649      ;
+; 0.498 ; IR:U4|IR_reg[3]                 ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.650      ;
+; 0.501 ; Debounce:U8|counter[3]          ; Debounce:U8|counter[4]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.653      ;
+; 0.502 ; Debounce:U8|counter[5]          ; Debounce:U8|counter[6]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.654      ;
+; 0.503 ; controller:U2|cnt[7]            ; controller:U2|cnt[8]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.655      ;
+; 0.504 ; Debounce:U8|Int_req             ; pc:U7|pc_val[2]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; Debounce:U8|Int_req             ; pc:U7|pc_val[0]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; Debounce:U8|Int_req             ; pc:U7|pc_val[1]                 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; controller:U2|cnt[3]            ; controller:U2|cnt[4]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.656      ;
+; 0.505 ; Debounce:U8|counter[7]          ; Debounce:U8|counter[8]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; Debounce:U8|counter[8]          ; Debounce:U8|counter[9]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; Debounce:U8|counter[12]         ; Debounce:U8|counter[13]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; controller:U2|cnt[5]            ; controller:U2|cnt[6]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; Debounce:U8|counter[14]         ; Debounce:U8|counter[15]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.509 ; controller:U2|cnt[0]            ; controller:U2|cnt[1]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.661      ;
+; 0.510 ; controller:U2|present_state.I2  ; IR:U4|IR_reg[7]                 ; Clk          ; Clk         ; 0.000        ; 0.192      ; 0.854      ;
+; 0.514 ; Debounce:U8|counter[0]          ; Debounce:U8|counter[1]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.666      ;
+; 0.516 ; Debounce:U8|counter[2]          ; Debounce:U8|counter[3]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.668      ;
+; 0.516 ; controller:U2|cnt[2]            ; controller:U2|cnt[3]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.668      ;
+; 0.517 ; controller:U2|cnt[4]            ; controller:U2|cnt[5]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.669      ;
+; 0.517 ; Debounce:U8|counter[13]         ; Debounce:U8|counter[14]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.669      ;
+; 0.518 ; PORT_IN[7]                      ; MAR:U5|MAR_reg[7]               ; Clk          ; Clk         ; 0.000        ; 1.789      ; 1.459      ;
+; 0.518 ; Debounce:U8|counter[4]          ; Debounce:U8|counter[5]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; controller:U2|cnt[6]            ; controller:U2|cnt[7]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; Debounce:U8|counter[6]          ; Debounce:U8|counter[7]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; Debounce:U8|counter[16]         ; Debounce:U8|counter[17]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; Debounce:U8|counter[15]         ; Debounce:U8|counter[16]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.523 ; controller:U2|present_state.I10 ; IR:U4|IR_reg[7]                 ; Clk          ; Clk         ; 0.000        ; 0.192      ; 0.867      ;
+; 0.524 ; controller:U2|cnt[6]            ; controller:U2|present_state.R0  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.676      ;
+; 0.528 ; Debounce:U8|counter[18]         ; Debounce:U8|counter[19]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.680      ;
+; 0.528 ; Debounce:U8|counter[10]         ; Debounce:U8|counter[12]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.680      ;
+; 0.532 ; Debounce:U8|counter[11]         ; Debounce:U8|counter[13]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.684      ;
+; 0.536 ; Debounce:U8|counter[3]          ; Debounce:U8|counter[5]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.688      ;
+; 0.537 ; Debounce:U8|counter[5]          ; Debounce:U8|counter[7]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.689      ;
+; 0.539 ; controller:U2|present_state.I10 ; ALU:U3|acc[8]                   ; Clk          ; Clk         ; 0.000        ; 0.197      ; 0.888      ;
+; 0.539 ; controller:U2|cnt[3]            ; controller:U2|cnt[5]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.691      ;
+; 0.540 ; Debounce:U8|counter[7]          ; Debounce:U8|counter[9]          ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.692      ;
+; 0.540 ; Debounce:U8|counter[12]         ; Debounce:U8|counter[14]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.692      ;
+; 0.540 ; controller:U2|cnt[5]            ; controller:U2|cnt[7]            ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.692      ;
+; 0.540 ; Debounce:U8|counter[14]         ; Debounce:U8|counter[16]         ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.692      ;
+; 0.544 ; controller:U2|present_state.I3  ; controller:U2|present_state.I10 ; Clk          ; Clk         ; 0.000        ; -0.199     ; 0.497      ;
+; 0.548 ; ALU:U3|acc[0]                   ; ALU:U3|acc[0]                   ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.700      ;
+; 0.548 ; Debounce:U8|counter[9]          ; Debounce:U8|counter[10]         ; Clk          ; Clk         ; 0.000        ; 0.004      ; 0.704      ;
+; 0.551 ; IR:U4|IR_reg[4]                 ; controller:U2|present_state.I6  ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.703      ;
++-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'Clk'                                                                                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------------------------------+
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg5 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg6 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_address_reg7 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg10 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg10 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg11 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg11 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg12 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg12 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg2  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg2  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg3  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg3  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg5  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg5  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg6  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg6  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg7  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg7  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg8  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg8  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg9  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_datain_reg9  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a11~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a11~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a12~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a12~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a13~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a13~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a14~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a14~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a15~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a15~porta_memory_reg0 ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a1~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a1~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a2~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a2~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a3~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a3~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a4~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a4~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a5~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a5~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a6~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a6~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; High Pulse Width ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a7~porta_memory_reg0  ;
+; 97.500 ; 100.000      ; 2.500          ; Low Pulse Width  ; Clk   ; Fall       ; memory:U1|altsyncram:altsyncram_component|altsyncram_5kc1:auto_generated|ram_block1a7~porta_memory_reg0  ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[0]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[0]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[1]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[1]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[2]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[2]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[3]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[3]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[4]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[4]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[5]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[5]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[6]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[6]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[7]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[7]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; ALU:U3|acc[8]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; ALU:U3|acc[8]                                                                                            ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|Enable                                                                                       ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|Enable                                                                                       ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|Int_req                                                                                      ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|Int_req                                                                                      ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|Taster1                                                                                      ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|Taster1                                                                                      ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|counter[0]                                                                                   ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|counter[0]                                                                                   ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|counter[10]                                                                                  ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|counter[10]                                                                                  ;
+; 99.000 ; 100.000      ; 1.000          ; High Pulse Width ; Clk   ; Rise       ; Debounce:U8|counter[11]                                                                                  ;
+; 99.000 ; 100.000      ; 1.000          ; Low Pulse Width  ; Clk   ; Rise       ; Debounce:U8|counter[11]                                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; Int_code[*]  ; Clk        ; 0.062  ; 0.062  ; Rise       ; Clk             ;
+;  Int_code[0] ; Clk        ; 0.002  ; 0.002  ; Rise       ; Clk             ;
+;  Int_code[1] ; Clk        ; 0.062  ; 0.062  ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 3.475  ; 3.475  ; Rise       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; 2.763  ; 2.763  ; Rise       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; 3.475  ; 3.475  ; Rise       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; 2.626  ; 2.626  ; Rise       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; 3.434  ; 3.434  ; Rise       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; 3.134  ; 3.134  ; Rise       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; 2.707  ; 2.707  ; Rise       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; 2.526  ; 2.526  ; Rise       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; 2.065  ; 2.065  ; Rise       ; Clk             ;
+; Taster       ; Clk        ; 3.369  ; 3.369  ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; -0.583 ; -0.583 ; Fall       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; -0.865 ; -0.865 ; Fall       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; -0.583 ; -0.583 ; Fall       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; -0.800 ; -0.800 ; Fall       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; -0.862 ; -0.862 ; Fall       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; -0.918 ; -0.918 ; Fall       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; -1.156 ; -1.156 ; Fall       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; -1.211 ; -1.211 ; Fall       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; -1.372 ; -1.372 ; Fall       ; Clk             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; Int_code[*]  ; Clk        ; 0.254  ; 0.254  ; Rise       ; Clk             ;
+;  Int_code[0] ; Clk        ; 0.254  ; 0.254  ; Rise       ; Clk             ;
+;  Int_code[1] ; Clk        ; 0.119  ; 0.119  ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 0.482  ; 0.482  ; Rise       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; 0.244  ; 0.244  ; Rise       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; -0.236 ; -0.236 ; Rise       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; 0.096  ; 0.096  ; Rise       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; -0.158 ; -0.158 ; Rise       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; 0.392  ; 0.392  ; Rise       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; 0.144  ; 0.144  ; Rise       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; 0.198  ; 0.198  ; Rise       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; 0.482  ; 0.482  ; Rise       ; Clk             ;
+; Taster       ; Clk        ; -2.208 ; -2.208 ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 1.511  ; 1.511  ; Fall       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; 1.004  ; 1.004  ; Fall       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; 0.722  ; 0.722  ; Fall       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; 0.939  ; 0.939  ; Fall       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; 1.001  ; 1.001  ; Fall       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; 1.057  ; 1.057  ; Fall       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; 1.295  ; 1.295  ; Fall       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; 1.350  ; 1.350  ; Fall       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; 1.511  ; 1.511  ; Fall       ; Clk             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Seg0[*]   ; Clk        ; 4.612 ; 4.612 ; Rise       ; Clk             ;
+;  Seg0[0]  ; Clk        ; 4.503 ; 4.503 ; Rise       ; Clk             ;
+;  Seg0[1]  ; Clk        ; 4.556 ; 4.556 ; Rise       ; Clk             ;
+;  Seg0[2]  ; Clk        ; 4.592 ; 4.592 ; Rise       ; Clk             ;
+;  Seg0[3]  ; Clk        ; 4.596 ; 4.596 ; Rise       ; Clk             ;
+;  Seg0[4]  ; Clk        ; 4.602 ; 4.602 ; Rise       ; Clk             ;
+;  Seg0[5]  ; Clk        ; 4.612 ; 4.612 ; Rise       ; Clk             ;
+;  Seg0[6]  ; Clk        ; 4.610 ; 4.610 ; Rise       ; Clk             ;
+; Seg1[*]   ; Clk        ; 4.763 ; 4.763 ; Rise       ; Clk             ;
+;  Seg1[0]  ; Clk        ; 4.374 ; 4.374 ; Rise       ; Clk             ;
+;  Seg1[1]  ; Clk        ; 4.315 ; 4.315 ; Rise       ; Clk             ;
+;  Seg1[2]  ; Clk        ; 4.716 ; 4.716 ; Rise       ; Clk             ;
+;  Seg1[3]  ; Clk        ; 4.384 ; 4.384 ; Rise       ; Clk             ;
+;  Seg1[4]  ; Clk        ; 4.286 ; 4.286 ; Rise       ; Clk             ;
+;  Seg1[5]  ; Clk        ; 4.763 ; 4.763 ; Rise       ; Clk             ;
+;  Seg1[6]  ; Clk        ; 4.357 ; 4.357 ; Rise       ; Clk             ;
+; Seg2[*]   ; Clk        ; 4.513 ; 4.513 ; Rise       ; Clk             ;
+;  Seg2[0]  ; Clk        ; 4.244 ; 4.244 ; Rise       ; Clk             ;
+;  Seg2[1]  ; Clk        ; 4.343 ; 4.343 ; Rise       ; Clk             ;
+;  Seg2[2]  ; Clk        ; 4.492 ; 4.492 ; Rise       ; Clk             ;
+;  Seg2[3]  ; Clk        ; 4.513 ; 4.513 ; Rise       ; Clk             ;
+;  Seg2[4]  ; Clk        ; 4.491 ; 4.491 ; Rise       ; Clk             ;
+;  Seg2[5]  ; Clk        ; 4.508 ; 4.508 ; Rise       ; Clk             ;
+;  Seg2[6]  ; Clk        ; 4.493 ; 4.493 ; Rise       ; Clk             ;
+; Seg3[*]   ; Clk        ; 4.546 ; 4.546 ; Rise       ; Clk             ;
+;  Seg3[0]  ; Clk        ; 4.387 ; 4.387 ; Rise       ; Clk             ;
+;  Seg3[1]  ; Clk        ; 4.546 ; 4.546 ; Rise       ; Clk             ;
+;  Seg3[2]  ; Clk        ; 4.535 ; 4.535 ; Rise       ; Clk             ;
+;  Seg3[3]  ; Clk        ; 4.194 ; 4.194 ; Rise       ; Clk             ;
+;  Seg3[4]  ; Clk        ; 4.239 ; 4.239 ; Rise       ; Clk             ;
+;  Seg3[5]  ; Clk        ; 4.444 ; 4.444 ; Rise       ; Clk             ;
+;  Seg3[6]  ; Clk        ; 4.428 ; 4.428 ; Rise       ; Clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Seg0[*]   ; Clk        ; 3.905 ; 3.905 ; Rise       ; Clk             ;
+;  Seg0[0]  ; Clk        ; 3.905 ; 3.905 ; Rise       ; Clk             ;
+;  Seg0[1]  ; Clk        ; 4.205 ; 4.205 ; Rise       ; Clk             ;
+;  Seg0[2]  ; Clk        ; 4.240 ; 4.240 ; Rise       ; Clk             ;
+;  Seg0[3]  ; Clk        ; 4.244 ; 4.244 ; Rise       ; Clk             ;
+;  Seg0[4]  ; Clk        ; 4.254 ; 4.254 ; Rise       ; Clk             ;
+;  Seg0[5]  ; Clk        ; 4.260 ; 4.260 ; Rise       ; Clk             ;
+;  Seg0[6]  ; Clk        ; 4.264 ; 4.264 ; Rise       ; Clk             ;
+; Seg1[*]   ; Clk        ; 4.112 ; 4.112 ; Rise       ; Clk             ;
+;  Seg1[0]  ; Clk        ; 4.178 ; 4.178 ; Rise       ; Clk             ;
+;  Seg1[1]  ; Clk        ; 4.138 ; 4.138 ; Rise       ; Clk             ;
+;  Seg1[2]  ; Clk        ; 4.130 ; 4.130 ; Rise       ; Clk             ;
+;  Seg1[3]  ; Clk        ; 4.194 ; 4.194 ; Rise       ; Clk             ;
+;  Seg1[4]  ; Clk        ; 4.131 ; 4.131 ; Rise       ; Clk             ;
+;  Seg1[5]  ; Clk        ; 4.183 ; 4.183 ; Rise       ; Clk             ;
+;  Seg1[6]  ; Clk        ; 4.112 ; 4.112 ; Rise       ; Clk             ;
+; Seg2[*]   ; Clk        ; 4.065 ; 4.065 ; Rise       ; Clk             ;
+;  Seg2[0]  ; Clk        ; 4.065 ; 4.065 ; Rise       ; Clk             ;
+;  Seg2[1]  ; Clk        ; 4.146 ; 4.146 ; Rise       ; Clk             ;
+;  Seg2[2]  ; Clk        ; 4.291 ; 4.291 ; Rise       ; Clk             ;
+;  Seg2[3]  ; Clk        ; 4.250 ; 4.250 ; Rise       ; Clk             ;
+;  Seg2[4]  ; Clk        ; 4.224 ; 4.224 ; Rise       ; Clk             ;
+;  Seg2[5]  ; Clk        ; 4.233 ; 4.233 ; Rise       ; Clk             ;
+;  Seg2[6]  ; Clk        ; 4.297 ; 4.297 ; Rise       ; Clk             ;
+; Seg3[*]   ; Clk        ; 4.016 ; 4.016 ; Rise       ; Clk             ;
+;  Seg3[0]  ; Clk        ; 4.210 ; 4.210 ; Rise       ; Clk             ;
+;  Seg3[1]  ; Clk        ; 4.413 ; 4.413 ; Rise       ; Clk             ;
+;  Seg3[2]  ; Clk        ; 4.359 ; 4.359 ; Rise       ; Clk             ;
+;  Seg3[3]  ; Clk        ; 4.016 ; 4.016 ; Rise       ; Clk             ;
+;  Seg3[4]  ; Clk        ; 4.049 ; 4.049 ; Rise       ; Clk             ;
+;  Seg3[5]  ; Clk        ; 4.304 ; 4.304 ; Rise       ; Clk             ;
+;  Seg3[6]  ; Clk        ; 4.290 ; 4.290 ; Rise       ; Clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 80.183 ; 0.165 ; N/A      ; N/A     ; 97.436              ;
+;  Clk             ; 80.183 ; 0.165 ; N/A      ; N/A     ; 97.436              ;
+; Design-wide TNS  ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  Clk             ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; Int_code[*]  ; Clk        ; 1.439  ; 1.439  ; Rise       ; Clk             ;
+;  Int_code[0] ; Clk        ; 1.302  ; 1.302  ; Rise       ; Clk             ;
+;  Int_code[1] ; Clk        ; 1.439  ; 1.439  ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 10.828 ; 10.828 ; Rise       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; 9.154  ; 9.154  ; Rise       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; 10.828 ; 10.828 ; Rise       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; 8.611  ; 8.611  ; Rise       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; 10.800 ; 10.800 ; Rise       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; 9.957  ; 9.957  ; Rise       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; 8.962  ; 8.962  ; Rise       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; 8.511  ; 8.511  ; Rise       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; 7.281  ; 7.281  ; Rise       ; Clk             ;
+; Taster       ; Clk        ; 7.849  ; 7.849  ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 0.196  ; 0.196  ; Fall       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; -0.639 ; -0.639 ; Fall       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; 0.196  ; 0.196  ; Fall       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; -0.490 ; -0.490 ; Fall       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; -0.788 ; -0.788 ; Fall       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; -0.918 ; -0.918 ; Fall       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; -1.156 ; -1.156 ; Fall       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; -1.211 ; -1.211 ; Fall       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; -1.372 ; -1.372 ; Fall       ; Clk             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; Int_code[*]  ; Clk        ; 0.254  ; 0.254  ; Rise       ; Clk             ;
+;  Int_code[0] ; Clk        ; 0.254  ; 0.254  ; Rise       ; Clk             ;
+;  Int_code[1] ; Clk        ; 0.119  ; 0.119  ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 0.482  ; 0.482  ; Rise       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; 0.244  ; 0.244  ; Rise       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; -0.236 ; -0.236 ; Rise       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; 0.096  ; 0.096  ; Rise       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; -0.158 ; -0.158 ; Rise       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; 0.392  ; 0.392  ; Rise       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; 0.144  ; 0.144  ; Rise       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; 0.198  ; 0.198  ; Rise       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; 0.482  ; 0.482  ; Rise       ; Clk             ;
+; Taster       ; Clk        ; -2.208 ; -2.208 ; Rise       ; Clk             ;
+; PORT_IN[*]   ; Clk        ; 2.212  ; 2.212  ; Fall       ; Clk             ;
+;  PORT_IN[0]  ; Clk        ; 1.004  ; 1.004  ; Fall       ; Clk             ;
+;  PORT_IN[1]  ; Clk        ; 0.722  ; 0.722  ; Fall       ; Clk             ;
+;  PORT_IN[2]  ; Clk        ; 0.939  ; 0.939  ; Fall       ; Clk             ;
+;  PORT_IN[3]  ; Clk        ; 1.078  ; 1.078  ; Fall       ; Clk             ;
+;  PORT_IN[4]  ; Clk        ; 1.295  ; 1.295  ; Fall       ; Clk             ;
+;  PORT_IN[5]  ; Clk        ; 1.610  ; 1.610  ; Fall       ; Clk             ;
+;  PORT_IN[6]  ; Clk        ; 1.746  ; 1.746  ; Fall       ; Clk             ;
+;  PORT_IN[7]  ; Clk        ; 2.212  ; 2.212  ; Fall       ; Clk             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Seg0[*]   ; Clk        ; 9.233 ; 9.233 ; Rise       ; Clk             ;
+;  Seg0[0]  ; Clk        ; 9.039 ; 9.039 ; Rise       ; Clk             ;
+;  Seg0[1]  ; Clk        ; 9.032 ; 9.032 ; Rise       ; Clk             ;
+;  Seg0[2]  ; Clk        ; 9.206 ; 9.206 ; Rise       ; Clk             ;
+;  Seg0[3]  ; Clk        ; 9.212 ; 9.212 ; Rise       ; Clk             ;
+;  Seg0[4]  ; Clk        ; 9.210 ; 9.210 ; Rise       ; Clk             ;
+;  Seg0[5]  ; Clk        ; 9.228 ; 9.228 ; Rise       ; Clk             ;
+;  Seg0[6]  ; Clk        ; 9.233 ; 9.233 ; Rise       ; Clk             ;
+; Seg1[*]   ; Clk        ; 9.549 ; 9.549 ; Rise       ; Clk             ;
+;  Seg1[0]  ; Clk        ; 8.646 ; 8.646 ; Rise       ; Clk             ;
+;  Seg1[1]  ; Clk        ; 8.554 ; 8.554 ; Rise       ; Clk             ;
+;  Seg1[2]  ; Clk        ; 9.532 ; 9.532 ; Rise       ; Clk             ;
+;  Seg1[3]  ; Clk        ; 8.572 ; 8.572 ; Rise       ; Clk             ;
+;  Seg1[4]  ; Clk        ; 8.398 ; 8.398 ; Rise       ; Clk             ;
+;  Seg1[5]  ; Clk        ; 9.549 ; 9.549 ; Rise       ; Clk             ;
+;  Seg1[6]  ; Clk        ; 8.597 ; 8.597 ; Rise       ; Clk             ;
+; Seg2[*]   ; Clk        ; 8.981 ; 8.981 ; Rise       ; Clk             ;
+;  Seg2[0]  ; Clk        ; 8.343 ; 8.343 ; Rise       ; Clk             ;
+;  Seg2[1]  ; Clk        ; 8.596 ; 8.596 ; Rise       ; Clk             ;
+;  Seg2[2]  ; Clk        ; 8.949 ; 8.949 ; Rise       ; Clk             ;
+;  Seg2[3]  ; Clk        ; 8.981 ; 8.981 ; Rise       ; Clk             ;
+;  Seg2[4]  ; Clk        ; 8.882 ; 8.882 ; Rise       ; Clk             ;
+;  Seg2[5]  ; Clk        ; 8.938 ; 8.938 ; Rise       ; Clk             ;
+;  Seg2[6]  ; Clk        ; 8.948 ; 8.948 ; Rise       ; Clk             ;
+; Seg3[*]   ; Clk        ; 8.907 ; 8.907 ; Rise       ; Clk             ;
+;  Seg3[0]  ; Clk        ; 8.691 ; 8.691 ; Rise       ; Clk             ;
+;  Seg3[1]  ; Clk        ; 8.907 ; 8.907 ; Rise       ; Clk             ;
+;  Seg3[2]  ; Clk        ; 8.884 ; 8.884 ; Rise       ; Clk             ;
+;  Seg3[3]  ; Clk        ; 8.224 ; 8.224 ; Rise       ; Clk             ;
+;  Seg3[4]  ; Clk        ; 8.346 ; 8.346 ; Rise       ; Clk             ;
+;  Seg3[5]  ; Clk        ; 8.779 ; 8.779 ; Rise       ; Clk             ;
+;  Seg3[6]  ; Clk        ; 8.749 ; 8.749 ; Rise       ; Clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Seg0[*]   ; Clk        ; 3.905 ; 3.905 ; Rise       ; Clk             ;
+;  Seg0[0]  ; Clk        ; 3.905 ; 3.905 ; Rise       ; Clk             ;
+;  Seg0[1]  ; Clk        ; 4.205 ; 4.205 ; Rise       ; Clk             ;
+;  Seg0[2]  ; Clk        ; 4.240 ; 4.240 ; Rise       ; Clk             ;
+;  Seg0[3]  ; Clk        ; 4.244 ; 4.244 ; Rise       ; Clk             ;
+;  Seg0[4]  ; Clk        ; 4.254 ; 4.254 ; Rise       ; Clk             ;
+;  Seg0[5]  ; Clk        ; 4.260 ; 4.260 ; Rise       ; Clk             ;
+;  Seg0[6]  ; Clk        ; 4.264 ; 4.264 ; Rise       ; Clk             ;
+; Seg1[*]   ; Clk        ; 4.112 ; 4.112 ; Rise       ; Clk             ;
+;  Seg1[0]  ; Clk        ; 4.178 ; 4.178 ; Rise       ; Clk             ;
+;  Seg1[1]  ; Clk        ; 4.138 ; 4.138 ; Rise       ; Clk             ;
+;  Seg1[2]  ; Clk        ; 4.130 ; 4.130 ; Rise       ; Clk             ;
+;  Seg1[3]  ; Clk        ; 4.194 ; 4.194 ; Rise       ; Clk             ;
+;  Seg1[4]  ; Clk        ; 4.131 ; 4.131 ; Rise       ; Clk             ;
+;  Seg1[5]  ; Clk        ; 4.183 ; 4.183 ; Rise       ; Clk             ;
+;  Seg1[6]  ; Clk        ; 4.112 ; 4.112 ; Rise       ; Clk             ;
+; Seg2[*]   ; Clk        ; 4.065 ; 4.065 ; Rise       ; Clk             ;
+;  Seg2[0]  ; Clk        ; 4.065 ; 4.065 ; Rise       ; Clk             ;
+;  Seg2[1]  ; Clk        ; 4.146 ; 4.146 ; Rise       ; Clk             ;
+;  Seg2[2]  ; Clk        ; 4.291 ; 4.291 ; Rise       ; Clk             ;
+;  Seg2[3]  ; Clk        ; 4.250 ; 4.250 ; Rise       ; Clk             ;
+;  Seg2[4]  ; Clk        ; 4.224 ; 4.224 ; Rise       ; Clk             ;
+;  Seg2[5]  ; Clk        ; 4.233 ; 4.233 ; Rise       ; Clk             ;
+;  Seg2[6]  ; Clk        ; 4.297 ; 4.297 ; Rise       ; Clk             ;
+; Seg3[*]   ; Clk        ; 4.016 ; 4.016 ; Rise       ; Clk             ;
+;  Seg3[0]  ; Clk        ; 4.210 ; 4.210 ; Rise       ; Clk             ;
+;  Seg3[1]  ; Clk        ; 4.413 ; 4.413 ; Rise       ; Clk             ;
+;  Seg3[2]  ; Clk        ; 4.359 ; 4.359 ; Rise       ; Clk             ;
+;  Seg3[3]  ; Clk        ; 4.016 ; 4.016 ; Rise       ; Clk             ;
+;  Seg3[4]  ; Clk        ; 4.049 ; 4.049 ; Rise       ; Clk             ;
+;  Seg3[5]  ; Clk        ; 4.304 ; 4.304 ; Rise       ; Clk             ;
+;  Seg3[6]  ; Clk        ; 4.290 ; 4.290 ; Rise       ; Clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; Clk        ; Clk      ; 17059    ; 2835     ; 505      ; 130      ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; Clk        ; Clk      ; 17059    ; 2835     ; 505      ; 130      ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 90    ; 90   ;
+; Unconstrained Output Ports      ; 28    ; 28   ;
+; Unconstrained Output Port Paths ; 112   ; 112  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Nov 25 11:16:47 2021
+Info: Command: quartus_sta MIcrocontroller -c MIcrocontroller
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'MIcrocontroller.sdc'
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 80.183
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    80.183         0.000 Clk 
+Info (332146): Worst-case hold slack is 0.435
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.435         0.000 Clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 97.436
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    97.436         0.000 Clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 91.881
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    91.881         0.000 Clk 
+Info (332146): Worst-case hold slack is 0.165
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.165         0.000 Clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 97.500
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    97.500         0.000 Clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4540 megabytes
+    Info: Processing ended: Thu Nov 25 11:16:48 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

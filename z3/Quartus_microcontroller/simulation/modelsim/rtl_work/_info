@@ -1,0 +1,76 @@
+m255
+13
+cModel Technology
+dD:\Korisnici\Borko\ZaMaltu\Quartus\simulation\modelsim
+Epc
+w1358161710
+DP ieee std_logic_arith N1b?3<a_g2AOk_0Ie>0F:2
+DP ieee std_logic_unsigned =:F>A4m7i`0z3e0XK^PIX0
+DP ieee std_logic_1164 ChagfbCXBFdaC62b9Y:;<1
+FD:/Korisnici/Borko/ZaMaltu/Quartus/pc.vhd
+l0
+L5
+VAa1Hk`lQdNV4e4^9b9K8L0
+OV;C;6.1g;31
+31
+o-93 -work work -O0
+tExplicit 1 GenerateLoopIterationMax 100000
+Apc_arch
+DP ieee std_logic_arith N1b?3<a_g2AOk_0Ie>0F:2
+DP ieee std_logic_unsigned =:F>A4m7i`0z3e0XK^PIX0
+DP ieee std_logic_1164 ChagfbCXBFdaC62b9Y:;<1
+DE work pc Aa1Hk`lQdNV4e4^9b9K8L0
+l18
+L16
+V;5E7dV[BC<6JCMVb?B9Fl0
+OV;C;6.1g;31
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_unsigned
+M1 ieee std_logic_arith
+o-93 -work work -O0
+tExplicit 1 GenerateLoopIterationMax 100000
+Ereg
+w1358161695
+DP ieee std_logic_1164 ChagfbCXBFdaC62b9Y:;<1
+FD:/Korisnici/Borko/ZaMaltu/Quartus/Reg.vhd
+l0
+L6
+V6zNnKl`7g;A:87g4LU@3I0
+OV;C;6.1g;31
+31
+o-93 -work work -O0
+tExplicit 1 GenerateLoopIterationMax 100000
+Areg
+DP ieee std_logic_1164 ChagfbCXBFdaC62b9Y:;<1
+DE work reg 6zNnKl`7g;A:87g4LU@3I0
+l19
+L18
+V3R95ZlhIQ3j10I8T`c85F0
+OV;C;6.1g;31
+31
+M1 ieee std_logic_1164
+o-93 -work work -O0
+tExplicit 1 GenerateLoopIterationMax 100000
+Esevensegdec
+w1358163215
+DP ieee std_logic_1164 ChagfbCXBFdaC62b9Y:;<1
+FD:/Korisnici/Borko/ZaMaltu/Quartus/SevenSegDec.vhd
+l0
+L4
+VoDToF?Pzg3>Y@JB6>6T:01
+OV;C;6.1g;31
+31
+o-93 -work work -O0
+tExplicit 1 GenerateLoopIterationMax 100000
+Asevensegdec
+DP ieee std_logic_1164 ChagfbCXBFdaC62b9Y:;<1
+DE work sevensegdec oDToF?Pzg3>Y@JB6>6T:01
+l16
+L13
+VGX9IPdd[oW6?>HS`T;b<D2
+OV;C;6.1g;31
+31
+M1 ieee std_logic_1164
+o-93 -work work -O0
+tExplicit 1 GenerateLoopIterationMax 100000

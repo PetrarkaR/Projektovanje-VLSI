@@ -1,0 +1,15 @@
+
+State Machine - |microcontroller|controller:U2|present_state
+Name present_state.I10 present_state.I9 present_state.I8 present_state.I7 present_state.I6 present_state.I5 present_state.I4 present_state.I3 present_state.I2 present_state.I1 present_state.R1 present_state.R0 
+present_state.R0 0 0 0 0 0 0 0 0 0 0 0 0 
+present_state.R1 0 0 0 0 0 0 0 0 0 0 1 1 
+present_state.I1 0 0 0 0 0 0 0 0 0 1 0 1 
+present_state.I2 0 0 0 0 0 0 0 0 1 0 0 1 
+present_state.I3 0 0 0 0 0 0 0 1 0 0 0 1 
+present_state.I4 0 0 0 0 0 0 1 0 0 0 0 1 
+present_state.I5 0 0 0 0 0 1 0 0 0 0 0 1 
+present_state.I6 0 0 0 0 1 0 0 0 0 0 0 1 
+present_state.I7 0 0 0 1 0 0 0 0 0 0 0 1 
+present_state.I8 0 0 1 0 0 0 0 0 0 0 0 1 
+present_state.I9 0 1 0 0 0 0 0 0 0 0 0 1 
+present_state.I10 1 0 0 0 0 0 0 0 0 0 0 1 
