@@ -10,7 +10,13 @@ ENTITY SQC IS
         clk          : IN STD_LOGIC;
         rst          : IN STD_LOGIC;
         start_root   : IN STD_LOGIC;
-        A            : IN STD_LOGIC_VECTOR(23 DOWNTO 0)
+        A            : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+        outputregA   : OUT std_logic_vector(35 downto 0);
+        outputregB   : out std_logic_vector(11 downto 0);
+        outputMin    : out std_logic_vector(13 downto 0 );
+        outputSub    : out std_logic_vector(13 downto 0);
+        outputDiff   : out std_logic_vector(13 downto 0);
+        outputCout   : out std_logic
     );
 END SQC;
 
@@ -32,8 +38,13 @@ ARCHITECTURE Behavioral OF SQC IS
 
 BEGIN
     -- Output assignments
+    outputregA<=registerA;
+    outputregB<=registerB;
+    outputMin<= minuend;
+    outputSub<= subtrahend;
+    outputDiff<= difference;
+    outputCout<=cout;
     B<=registerB;
-    registerBt<=registerB&'0';
 
     stop_root <= '1' when cnt = 12 and calculating = '1' else '0';
     
