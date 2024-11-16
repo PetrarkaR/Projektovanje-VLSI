@@ -40,7 +40,7 @@ BEGIN
 					WHEN xor_op => acc(7 DOWNTO 0) <= acc(7 DOWNTO 0)XOR data_bus(7 DOWNTO 0);-- operacija XOR
 					WHEN not_op => acc(7 DOWNTO 0) <= NOT acc(7 DOWNTO 0);-- operacija NOT	
 					WHEN loadl => acc <= acc(8) & data_bus(7 DOWNTO 0); -- operacija LOADL
-					WHEN read => acc <= acc(8) & data_bus(7 DOWNTO 0); -- operacija READ
+					WHEN work.DEFS.read => acc <= acc(8) & data_bus(7 DOWNTO 0); -- operacija READ
 					WHEN OTHERS => NULL;
 				END CASE;
 			END IF;

@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11e MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
@@ -9,28 +10,29 @@ z2
 cModel Technology
 dD:/Users/Borko/Predmeti/Projektovanje VLSI/studenti/Studenti2021/MarijaJocic/zad1
 Ealu
-Z0 w1608298295
+Z0 w1731797495
 Z1 DPx4 work 4 defs 0 22 K;mg_Y8J1n2SKFdTUclg;1
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z6 dD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler
-Z7 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/ALU.vhd
-Z8 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/ALU.vhd
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 25
+Z6 dC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler
+Z7 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd
+Z8 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd
 l0
-L7
-Vm=E:FNTRIGYZ>H]Hndda;2
+L7 1
+VL=_:ROHSI45S4I3kE:^]n0
 !s100 ?=e?d=4WIYgj?`gUKo=aC3
-Z9 OV;C;10.5b;63
-32
-Z10 !s110 1637837066
+Z9 OV;C;2020.1;71
+33
+Z10 !s110 1731797502
 !i10b 1
-Z11 !s108 1637837066.000000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/ALU.vhd|
-Z13 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/ALU.vhd|
+Z11 !s108 1731797502.000000
+Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd|
+Z13 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd|
 !i113 1
-Z14 o-work work -2002 -explicit
+Z14 o-work work -2008 -explicit
 Z15 tExplicit 1 CvgOpt 0
 Aalu
 R1
@@ -38,13 +40,14 @@ R2
 R3
 R4
 R5
-DEx4 work 3 alu 0 22 m=E:FNTRIGYZ>H]Hndda;2
+DEx4 work 3 alu 0 22 L=_:ROHSI45S4I3kE:^]n0
+!i122 25
 l19
-L15
-VGKQORHjjCG?AIRLoXA^V>1
-!s100 1>6@fiJCJL51nzLlF9?0h2
+L15 43
+VGFo_Y46XQ0ZoE?I^U8_:b3
+!s100 HfOb4d12PHoN3;c[mdOjB3
 R9
-32
+33
 R10
 !i10b 1
 R11
@@ -59,56 +62,57 @@ R1
 R3
 R2
 R4
-R5
-R6
-Z17 8D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\controller.vhd
-Z18 FD:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\controller.vhd
+Z17 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z18 dD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler
+Z19 8D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\controller.vhd
+Z20 FD:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\controller.vhd
 l0
 L6
 V5P@QI]7azL9=GKE^=Kk=m1
 !s100 PYBfVJ;@@Re]Gn;?14eC50
-R9
+Z21 OV;C;10.5b;63
 32
-Z19 !s110 1637837474
+Z22 !s110 1637837474
 !i10b 1
-Z20 !s108 1637837474.000000
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\controller.vhd|
-Z22 !s107 D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\controller.vhd|
+Z23 !s108 1637837474.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\controller.vhd|
+Z25 !s107 D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\controller.vhd|
 !i113 1
-R14
+Z26 o-work work -2002 -explicit
 R15
 Acontroller_arch
 R1
 R3
 R2
 R4
-R5
-Z23 DEx4 work 10 controller 0 22 5P@QI]7azL9=GKE^=Kk=m1
+R17
+DEx4 work 10 controller 0 22 5P@QI]7azL9=GKE^=Kk=m1
 l24
 L17
 VWFMi5moiE`]5;maU_a5jK1
 !s100 2AmmZmfO_QR1HWg2Z8??z1
-R9
-32
-R19
-!i10b 1
-R20
 R21
+32
 R22
+!i10b 1
+R23
+R24
+R25
 !i113 1
-R14
+R26
 R15
 Edebounce
-Z24 w1356204400
+Z27 w1356204400
 R3
 R2
 R4
 R5
+!i122 26
 R6
-Z25 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Debounce.vhd
-Z26 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Debounce.vhd
+Z28 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd
+Z29 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd
 l0
-L5
+L5 1
 Vl`5TdY7:`lfV>ozo`OWnA3
 !s100 Kj@6zbW0H>XhUUGe=:mS33
 R9
@@ -116,10 +120,10 @@ R9
 R10
 !i10b 1
 R11
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Debounce.vhd|
-Z28 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Debounce.vhd|
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd|
+Z31 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd|
 !i113 1
-R14
+R26
 R15
 Adebounce
 R3
@@ -127,8 +131,9 @@ R2
 R4
 R5
 DEx4 work 8 debounce 0 22 l`5TdY7:`lfV>ozo`OWnA3
+!i122 26
 l16
-L13
+L13 30
 VSaQ5NWgaI749LiV9fHaC=3
 !s100 j1NN<P`mSSb_1?^_>]5nO2
 R9
@@ -136,41 +141,43 @@ R9
 R10
 !i10b 1
 R11
-R27
-R28
+R30
+R31
 !i113 1
-R14
+R26
 R15
 Pdefs
 R4
 R5
-w1608298263
+!i122 27
+w1731797475
 R6
-8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/DEFS.vhd
-FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/DEFS.vhd
+8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/DEFS.vhd
+FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/DEFS.vhd
 l0
-L4
-VK;mg_Y8J1n2SKFdTUclg;1
-!s100 WA]3d]9<16PQEGL_emFhl1
+L4 1
+V47XRTQVTbA;Fc1CakM95F2
+!s100 YclGm=FGeeFihGaSoe;N52
 R9
 32
 R10
 !i10b 1
 R11
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/DEFS.vhd|
-!s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/DEFS.vhd|
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/DEFS.vhd|
+!s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/DEFS.vhd|
 !i113 1
-R14
+R26
 R15
 Eir
-Z29 w1356338832
+Z32 w1356338832
 R4
 R5
+!i122 28
 R6
-Z30 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/IR.vhd
-Z31 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/IR.vhd
+Z33 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd
+Z34 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd
 l0
-L4
+L4 1
 V=4]7Ukzc6z<8kN4C<A=V13
 !s100 U5JnUA3XV;02Ufa:6cOK?0
 R9
@@ -178,17 +185,18 @@ R9
 R10
 !i10b 1
 R11
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/IR.vhd|
-Z33 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/IR.vhd|
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd|
+Z36 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd|
 !i113 1
-R14
+R26
 R15
 Air
 R4
 R5
 DEx4 work 2 ir 0 22 =4]7Ukzc6z<8kN4C<A=V13
+!i122 28
 l12
-L10
+L10 13
 V?knYjkCKXPhmNL]2QGk9e3
 !s100 1B?jZWo2<I^X1RzX4eZ4e2
 R9
@@ -196,20 +204,21 @@ R9
 R10
 !i10b 1
 R11
-R32
-R33
+R35
+R36
 !i113 1
-R14
+R26
 R15
 Emar
-Z34 w1356150480
+Z37 w1356150480
 R4
 R5
+!i122 29
 R6
-Z35 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/MAR.vhd
-Z36 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/MAR.vhd
+Z38 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd
+Z39 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd
 l0
-L4
+L4 1
 V4j6Wb?8W2XZgPc2U8gE=]2
 !s100 5KTJ[GYl2KE<l2Gcd6>Hn0
 R9
@@ -217,17 +226,18 @@ R9
 R10
 !i10b 1
 R11
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/MAR.vhd|
-Z38 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/MAR.vhd|
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd|
+Z41 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd|
 !i113 1
-R14
+R26
 R15
 Amar
 R4
 R5
 DEx4 work 3 mar 0 22 4j6Wb?8W2XZgPc2U8gE=]2
+!i122 29
 l14
-L12
+L12 15
 V^Zf11Q6WC=SbQdX^]G3aE0
 !s100 ^^Y`i8j<Q7izm0Ijb9]Q62
 R9
@@ -235,20 +245,21 @@ R9
 R10
 !i10b 1
 R11
-R37
-R38
+R40
+R41
 !i113 1
-R14
+R26
 R15
 Ememory
-Z39 w1356197776
+Z42 w1356197776
 R4
 R5
+!i122 30
 R6
-Z40 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/memory.vhd
-Z41 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/memory.vhd
+Z43 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd
+Z44 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd
 l0
-L7
+L7 1
 V>FK74UOA>CkSn00HdM2ZG1
 !s100 4hQ^GZje2_jSZ9Zn08COm1
 R9
@@ -256,17 +267,18 @@ R9
 R10
 !i10b 1
 R11
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/memory.vhd|
-Z43 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/memory.vhd|
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd|
+Z46 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd|
 !i113 1
-R14
+R26
 R15
 Asyn
 R4
 R5
 DEx4 work 6 memory 0 22 >FK74UOA>CkSn00HdM2ZG1
+!i122 30
 l49
-L17
+L17 64
 V1J0cUlFY2LioC]Q<]8THJ2
 !s100 <T0;R<TP@EmT[Ja_3?G0M2
 R9
@@ -274,111 +286,116 @@ R9
 R10
 !i10b 1
 R11
-R42
-R43
+R45
+R46
 !i113 1
-R14
+R26
 R15
 Emicrocontroller
-Z44 w1637836410
+Z47 w1637836410
 R4
 R5
+!i122 31
 R6
-Z45 8D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\microcontroller.vhd
-Z46 FD:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\microcontroller.vhd
+Z48 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd
+Z49 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd
 l0
-L25
+L25 1
 V0JAOYKGLZb>_Je;1fTUT10
 !s100 38a6;2@0F_MhJ21mMNb7@3
 R9
 32
-Z47 !s110 1637837067
+R10
 !i10b 1
 R11
-Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\microcontroller.vhd|
-Z49 !s107 D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\microcontroller.vhd|
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd|
+Z51 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd|
 !i113 1
-R14
+R26
 R15
 Amicrocontroller
 R4
 R5
-Z50 DEx4 work 15 microcontroller 0 22 0JAOYKGLZb>_Je;1fTUT10
+Z52 DEx4 work 15 microcontroller 0 22 0JAOYKGLZb>_Je;1fTUT10
+!i122 31
 l203
-L39
+L39 369
 VW4[33Y]3`8Th:zEXh4O9f0
 !s100 P]ejdkZmgLg>HC?[bn8>N2
 R9
 32
-R47
+R10
 !i10b 1
 R11
-R48
-R49
+R50
+R51
 !i113 1
-R14
+R26
 R15
 Emicrocontroller_tb
-Z51 w1608300685
+Z53 w1608300685
 R4
 R5
+!i122 32
 R6
-Z52 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/microcontroller_TB.vhd
-Z53 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/microcontroller_TB.vhd
+Z54 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd
+Z55 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd
 l0
-L4
+L4 1
 VNcnm`Pb2iQnL^i8VZlmL:0
 !s100 e4=]0Me>Y]ddUQ3YbMDQ>3
 R9
 32
-R47
+R10
 !i10b 1
-Z54 !s108 1637837067.000000
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/microcontroller_TB.vhd|
-Z56 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/microcontroller_TB.vhd|
+R11
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd|
+Z57 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd|
 !i113 1
-R14
+R26
 R15
 Atb_architecture
 R4
 R5
-Z57 DEx4 work 18 microcontroller_tb 0 22 Ncnm`Pb2iQnL^i8VZlmL:0
+Z58 DEx4 work 18 microcontroller_tb 0 22 Ncnm`Pb2iQnL^i8VZlmL:0
+!i122 32
 l38
-L7
+L7 108
 V`21DdFI_5TScPm@Tb=2S^1
 !s100 Df5>FBINGblFi<`fz?dY:1
 R9
 32
-R47
+R10
 !i10b 1
-R54
-R55
+R11
 R56
+R57
 !i113 1
-R14
+R26
 R15
 Epc
-Z58 w1356335788
+Z59 w1356335788
 R3
 R2
 R4
 R5
+!i122 33
 R6
-Z59 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/pc.vhd
-Z60 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/pc.vhd
+Z60 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd
+Z61 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd
 l0
-L5
+L5 1
 VNSYiD^m6Boh5hcAN7n<^>2
 !s100 cXYPG?5CajLS`3<d[]Him0
 R9
 32
-R47
+Z62 !s110 1731797503
 !i10b 1
-R54
-Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/pc.vhd|
-Z62 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/pc.vhd|
+R11
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd|
+Z64 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd|
 !i113 1
-R14
+R26
 R15
 Apc_arch
 R3
@@ -386,205 +403,215 @@ R2
 R4
 R5
 DEx4 work 2 pc 0 22 NSYiD^m6Boh5hcAN7n<^>2
+!i122 33
 l18
-L16
+L16 27
 VR<3TL_Bz]S[2k=oiD;iJ>1
 !s100 M]^C0d=f<?cnZMDaaY:^m1
 R9
 32
-R47
-!i10b 1
-R54
-R61
 R62
+!i10b 1
+R11
+R63
+R64
 !i113 1
-R14
+R26
 R15
 Ereg
-Z63 w1356206576
+Z65 w1356206576
 R4
 R5
+!i122 34
 R6
-Z64 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Reg.vhd
-Z65 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Reg.vhd
+Z66 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd
+Z67 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd
 l0
-L6
+L6 1
 VmDG7n15D9VP^c;UjD@de;0
 !s100 CIggXJ6nJlb8^0_an@JO?1
 R9
 32
-R47
+R62
 !i10b 1
-R54
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Reg.vhd|
-Z67 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Reg.vhd|
+Z68 !s108 1731797503.000000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd|
+Z70 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd|
 !i113 1
-R14
+R26
 R15
 Areg
 R4
 R5
 DEx4 work 3 reg 0 22 mDG7n15D9VP^c;UjD@de;0
+!i122 34
 l19
-L18
+L18 13
 VLO9@AI_5Xk4[cU`AT^Wk:2
 !s100 azT[Q``O1WM`33YHA=4A@2
 R9
 32
-R47
+R62
 !i10b 1
-R54
-R66
-R67
+R68
+R69
+R70
 !i113 1
-R14
+R26
 R15
 Erom256x16
-Z68 w1608296734
-R1
+Z71 w1608296734
+Z72 DPx4 work 4 defs 0 22 47XRTQVTbA;Fc1CakM95F2
 R3
 R2
 R4
 R5
+!i122 35
 R6
-Z69 8D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\ROM.vhd
-Z70 FD:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\ROM.vhd
+Z73 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd
+Z74 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd
 l0
-L6
+L6 1
 V<JBIoC@4GccXo`FV:8DC[2
 !s100 Q^VYg4`Emko8<mQ1Cz<G?1
 R9
 32
-R47
+R62
 !i10b 1
-R54
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\ROM.vhd|
-Z72 !s107 D:\Users\Borko\Predmeti\Projektovanje VLSI\ModelSim_2021\Mikrokontroler\ROM.vhd|
+R68
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd|
+Z76 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd|
 !i113 1
-R14
+R26
 R15
 Arom_arch
-R1
+R72
 R3
 R2
 R4
 R5
 DEx4 work 9 rom256x16 0 22 <JBIoC@4GccXo`FV:8DC[2
+!i122 35
 l22
-L12
+L12 82
 V7naQIb8_lZHZSg1LZOzB00
 !s100 LC9EEbmjGekJNIRKR2>5b3
 R9
 32
-R47
+R62
 !i10b 1
-R54
-R71
-R72
+R68
+R75
+R76
 !i113 1
-R14
+R26
 R15
 Esevensegdec
-Z73 w1356200914
+Z77 w1356200914
 R4
 R5
+!i122 36
 R6
-Z74 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/SevenSegDec.vhd
-Z75 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/SevenSegDec.vhd
+Z78 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd
+Z79 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd
 l0
-L4
+L4 1
 VRH0@WFJ3]Z=0GekK;IjKO2
 !s100 H=IcDji:VbS;`[C96<aU50
 R9
 32
-R47
+R62
 !i10b 1
-R54
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/SevenSegDec.vhd|
-Z77 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/SevenSegDec.vhd|
+R68
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd|
+Z81 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd|
 !i113 1
-R14
+R26
 R15
 Asevensegdec
 R4
 R5
 DEx4 work 11 sevensegdec 0 22 RH0@WFJ3]Z=0GekK;IjKO2
+!i122 36
 l16
-L13
+L13 58
 VSdS7b<07l^O1aQC;Ong<n1
 !s100 E`Ph2]OoS0Fz?dgL;O8bS3
 R9
 32
-R47
+R62
 !i10b 1
-R54
-R76
-R77
+R68
+R80
+R81
 !i113 1
-R14
+R26
 R15
 Ctestbench_for_microcontroller
 emicrocontroller_tb
 aTB_ARCHITECTURE
-R50
+R52
 DAx4 work 18 microcontroller_tb 15 tb_architecture 22 `21DdFI_5TScPm@Tb=2S^1
 R4
 R5
-R57
-R51
-R6
-R52
+R58
+!i122 32
 R53
+R6
+R54
+R55
 l0
-L116
+L116 1
 VBCoR2le5Z^oiKi_eRNoXg3
 !s100 z:_cG9B9fIiQ7aIWkNK`h2
 R9
 32
-R47
+R10
 !i10b 1
-R54
-R55
+R11
 R56
+R57
 !i113 1
-R14
+R26
 R15
 Ethree_state
-Z78 w1356197102
+Z82 w1356197102
 R4
 R5
+!i122 37
 R6
-Z79 8D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Three_state.vhd
-Z80 FD:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Three_state.vhd
+Z83 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd
+Z84 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd
 l0
-L6
+L6 1
 VGni`e9b^;gFhOzk<Rf0h^1
 !s100 Hef=En_]I_kcne>J@_fHZ2
 R9
 32
-R10
+R62
 !i10b 1
-R11
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Three_state.vhd|
-Z82 !s107 D:/Users/Borko/Predmeti/Projektovanje VLSI/ModelSim_2021/Mikrokontroler/Three_state.vhd|
+R68
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd|
+Z86 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd|
 !i113 1
-R14
+R26
 R15
 Athree_state
 R4
 R5
-DEx4 work 11 three_state 0 22 Gni`e9b^;gFhOzk<Rf0h^1
+Z87 DEx4 work 11 three_state 0 22 Gni`e9b^;gFhOzk<Rf0h^1
+!i122 37
 l16
-L15
-VD9@maj8o]1o;MNhmKb8gm3
-!s100 hob4@3OmM8OE5i8Mj8UHC3
+Z88 L15 5
+Z89 VD9@maj8o]1o;MNhmKb8gm3
+Z90 !s100 hob4@3OmM8OE5i8Mj8UHC3
 R9
 32
-R10
+R62
 !i10b 1
-R11
-R81
-R82
+R68
+R85
+R86
 !i113 1
-R14
+R26
 R15

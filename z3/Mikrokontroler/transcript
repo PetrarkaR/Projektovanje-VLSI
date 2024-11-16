@@ -1,0 +1,65 @@
+# Compile of ALU.vhd failed with 3 errors.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 13 compiles, 1 failed with 3 errors.
+# Compile of ALU.vhd failed with 2 errors.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 13 compiles, 1 failed with 2 errors.
+# Compile of ALU.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim work.microcontroller_tb
+# vsim work.microcontroller_tb 
+# Start time: 23:52:04 on Nov 16,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# ** Fatal: (vsim-3381) Obsolete library format for design unit. Design unit 'C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/work.controller(controller_arch)'
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U2 File: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd Line: 298
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 23:52:05 on Nov 16,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 9
