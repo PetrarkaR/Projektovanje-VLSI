@@ -69,7 +69,7 @@ component controller
        oe_reg : out STD_LOGIC;
        oe_rom : out STD_LOGIC;
        pc_data : out STD_LOGIC;
-       ready : out STD_LOGIC;
+       ready : inout STD_LOGIC;
        wr_ir : out STD_LOGIC;
        wr_ram : out STD_LOGIC;
        wr_reg : out STD_LOGIC
@@ -122,7 +122,7 @@ component pc
        int_code : in STD_LOGIC_VECTOR(1 downto 0);
        int_req : in STD_LOGIC;
        oe_pc : in STD_LOGIC;
-       ready : in STD_LOGIC;
+       ready : inout STD_LOGIC;
        reset : in STD_LOGIC;
        wr_pc : in STD_LOGIC;
        reset_int_req : out STD_LOGIC;

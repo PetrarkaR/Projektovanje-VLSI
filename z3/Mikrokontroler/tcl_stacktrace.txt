@@ -1,0 +1,22 @@
+Sun Nov 17 22:16:09 CET 2024
+Trace back: invalid command name "::AbstractDataset::simDataset0"
+    while executing
+"$nameSpace fullname $id"
+    (procedure "ObjectsTreeView::fullname" line 6)
+    invoked from within
+"ObjectsTreeView::fullname $id"
+    (procedure "QObjects::FormatGet" line 39)
+    invoked from within
+"QObjects::FormatGet .main_pane.objects W0nc8O 0"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-fmtgetcommand) $raw"
+    (object "::.main_pane.objects.interior.cs.body.tree" method "::vsimwidgets::Hierarchy::selection" body line 57)
+    invoked from within
+"$w selection get"
+    (procedure "QObjects::_selectHandler" line 5)
+    invoked from within
+"QObjects::_selectHandler .main_pane.objects.interior.cs.body.tree 0 4000"
+    (command handling selection)
+  <2:C:/intelFPGA/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {invalid command name "::AbstractDataset::simDataset0"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name "::AbstractDataset::simDataset0"}
