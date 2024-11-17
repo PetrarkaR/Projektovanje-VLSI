@@ -6,7 +6,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity memory
 -- Compiling architecture SYN of memory
 
-} {} {}} C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd {0 {vcom -work work -2008 -explicit -stats=none C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd
+} {} {}} C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd {1 {vcom -work work -2008 -explicit -stats=none C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -16,17 +16,8 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package DEFS
 -- Compiling entity ALU
 -- Compiling architecture ALU of ALU
-** Error: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd(43): (vcom-1078) Identifier "read" is not directly visible.
-   Potentially visible declarations are:
-        work.DEFS.read at C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/DEFS.vhd(22) (constant)
-        ieee.std_logic_1164.READ (procedure)
-        ieee.std_logic_1164.READ (procedure)
-        ieee.std_logic_1164.READ (procedure)
-        ieee.std_logic_1164.READ (procedure)
-** Error (suppressible): C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd(43): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
-** Note: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd(57): VHDL Compiler exiting
 
-} {11.0 12.0} {}} C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd
+} {} {}} C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -88,6 +79,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity MAR
 -- Compiling architecture MAR of MAR
+
+} {} {}} C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/DEFS.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/DEFS.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package DEFS
 
 } {} {}} C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
