@@ -6,14 +6,6 @@
 # Compile of memory.vhd was successful.
 # Compile of microcontroller.vhd was successful.
 # Compile of microcontroller_TB.vhd was successful.
-# Compile of ALU.vhd was successful with warnings.
-# Compile of Debounce.vhd was successful.
-# Compile of DEFS.vhd was successful.
-# Compile of IR.vhd was successful.
-# Compile of MAR.vhd was successful.
-# Compile of memory.vhd was successful.
-# Compile of microcontroller.vhd was successful.
-# Compile of microcontroller_TB.vhd was successful.
 # Compile of pc.vhd was successful.
 # Compile of Reg.vhd was successful.
 # Compile of ROM.vhd was successful.
@@ -21,12 +13,6 @@
 # Compile of Three_state.vhd was successful.
 # Compile of controller.vhd was successful.
 # 14 compiles, 0 failed with no errors.
-# Compile of pc.vhd was successful.
-# Compile of Reg.vhd was successful.
-# Compile of ROM.vhd was successful.
-# Compile of SevenSegDec.vhd was successful.
-# Compile of Three_state.vhd was successful.
-# 13 compiles, 0 failed with no errors.
 # Compile of ALU.vhd was successful.
 # Compile of Debounce.vhd was successful.
 # Compile of DEFS.vhd was successful.
@@ -44,7 +30,7 @@
 # 14 compiles, 0 failed with no errors.
 vsim work.microcontroller_tb
 # vsim work.microcontroller_tb 
-# Start time: 22:03:52 on Nov 17,2024
+# Start time: 20:46:48 on Nov 18,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -60,172 +46,40 @@ vsim work.microcontroller_tb
 # Loading work.reg(reg)
 # Loading work.three_state(three_state)
 # Loading work.defs
-# Loading work.controller(behavioral)
+# Loading work.controller(controller)
 # Loading work.alu(alu)
 # Loading work.ir(ir)
 # Loading work.mar(mar)
 # Loading work.rom256x16(rom_arch)
 # Loading work.pc(pc_arch)
 # Loading work.debounce(debounce)
-# ** Fatal: (vsim-3808) Incompatible modes for port "ready".
-#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U2 File: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd Line: 293
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 22:03:53 on Nov 17,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 5
-# Compile of ALU.vhd was successful.
-# Compile of Debounce.vhd was successful.
-# Compile of DEFS.vhd was successful.
-# Compile of IR.vhd was successful.
-# Compile of MAR.vhd was successful.
-# Compile of memory.vhd was successful.
-# Compile of microcontroller.vhd failed with 1 errors.
-# Compile of microcontroller_TB.vhd was successful.
-# Compile of pc.vhd was successful.
-# Compile of Reg.vhd was successful.
-# Compile of ROM.vhd was successful.
-# Compile of SevenSegDec.vhd was successful.
-# Compile of Three_state.vhd was successful.
-# Compile of controller.vhd was successful.
-# 14 compiles, 1 failed with 1 error.
-# Compile of ALU.vhd was successful.
-# Compile of Debounce.vhd was successful.
-# Compile of DEFS.vhd was successful.
-# Compile of IR.vhd was successful.
-# Compile of MAR.vhd was successful.
-# Compile of memory.vhd was successful.
-# Compile of microcontroller.vhd was successful.
-# Compile of microcontroller_TB.vhd was successful.
-# Compile of pc.vhd was successful.
-# Compile of Reg.vhd was successful.
-# Compile of ROM.vhd was successful.
-# Compile of SevenSegDec.vhd was successful.
-# Compile of Three_state.vhd was successful.
-# Compile of controller.vhd was successful.
-# 14 compiles, 0 failed with no errors.
-vsim work.microcontroller_tb
-# vsim work.microcontroller_tb 
-# Start time: 22:06:59 on Nov 17,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.microcontroller_tb(tb_architecture)
-# Loading work.microcontroller(microcontroller)
-# Loading work.memory(syn)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading altera_mf.altera_common_conversion(body)
-# Loading altera_mf.altera_device_families(body)
-# Loading altera_mf.altsyncram(translated)
-# Loading work.sevensegdec(sevensegdec)
-# Loading work.reg(reg)
-# Loading work.three_state(three_state)
-# Loading work.defs
-# Loading work.controller(behavioral)
-# Loading work.alu(alu)
-# Loading work.ir(ir)
-# Loading work.mar(mar)
-# Loading work.rom256x16(rom_arch)
-# Loading work.pc(pc_arch)
-# Loading work.debounce(debounce)
-# ** Fatal: (vsim-3808) Incompatible modes for port "ready".
-#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U2 File: C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd Line: 293
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 22:07:00 on Nov 17,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 3
-# Compile of ALU.vhd was successful.
-# Compile of Debounce.vhd was successful.
-# Compile of DEFS.vhd was successful.
-# Compile of IR.vhd was successful.
-# Compile of MAR.vhd was successful.
-# Compile of memory.vhd was successful.
-# Compile of microcontroller.vhd was successful.
-# Compile of microcontroller_TB.vhd failed with 1 errors.
-# Compile of pc.vhd was successful.
-# Compile of Reg.vhd was successful.
-# Compile of ROM.vhd was successful.
-# Compile of SevenSegDec.vhd was successful.
-# Compile of Three_state.vhd was successful.
-# Compile of controller.vhd was successful.
-# 14 compiles, 1 failed with 1 error.
-# Compile of ALU.vhd was successful.
-# Compile of Debounce.vhd was successful.
-# Compile of DEFS.vhd was successful.
-# Compile of IR.vhd was successful.
-# Compile of MAR.vhd was successful.
-# Compile of memory.vhd was successful.
-# Compile of microcontroller.vhd was successful.
-# Compile of microcontroller_TB.vhd was successful.
-# Compile of pc.vhd was successful.
-# Compile of Reg.vhd was successful.
-# Compile of ROM.vhd was successful.
-# Compile of SevenSegDec.vhd was successful.
-# Compile of Three_state.vhd was successful.
-# Compile of controller.vhd was successful.
-# 14 compiles, 0 failed with no errors.
-vsim work.microcontroller_tb
-# vsim work.microcontroller_tb 
-# Start time: 22:09:36 on Nov 17,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.microcontroller_tb(tb_architecture)
-# Loading work.microcontroller(microcontroller)
-# Loading work.memory(syn)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading altera_mf.altera_common_conversion(body)
-# Loading altera_mf.altera_device_families(body)
-# Loading altera_mf.altsyncram(translated)
-# Loading work.sevensegdec(sevensegdec)
-# Loading work.reg(reg)
-# Loading work.three_state(three_state)
-# Loading work.defs
-# Loading work.controller(behavioral)
-# Loading work.alu(alu)
-# Loading work.ir(ir)
-# Loading work.mar(mar)
-# Loading work.rom256x16(rom_arch)
-# Loading work.pc(pc_arch)
-# Loading work.debounce(debounce)
-# ** Warning: (vsim-8683) Uninitialized inout port /microcontroller_tb/UUT/U2/ready has no driver.
-# This port will contribute value (U) to the signal network.
 # WARNING: No extended dataflow license exists
 add wave -position insertpoint sim:/microcontroller_tb/*
+add wave -position end  sim:/microcontroller_tb/UUT/U2/cnt
+add wave -position end  sim:/microcontroller_tb/UUT/U7/pc_val
+add wave -position end  sim:/microcontroller_tb/UUT/U3/acc
 run -all
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U2
 # ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
 # No such file or directory. (errno = ENOENT)
 #    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
 # ** Error: Unsupported memory initialization file type (PASS)!
 #    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+add wave -position end  sim:/microcontroller_tb/UUT/Reg1
+add wave -position end  sim:/microcontroller_tb/UUT/Reg2
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /microcontroller_tb/UUT/U2
-quit -sim
-#  Trace back: invalid command name "::AbstractDataset::simDataset0"
-#     while executing
-# "$nameSpace fullname $id"
-#     (procedure "ObjectsTreeView::fullname" line 6)
-#     invoked from within
-# "ObjectsTreeView::fullname $id"
-#     (procedure "QObjects::FormatGet" line 39)
-#     invoked from within
-# "QObjects::FormatGet .main_pane.objects W0nc8O 0"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval $itk_option(-fmtgetcommand) $raw"
-#     (object "::.main_pane.objects.interior.cs.body.tree" method "::vsimwidgets::Hierarchy::selection" body line 57)
-#     invoked from within
-# "$w selection get"
-#     (procedure "QObjects::_selectHandler" line 5)
-#     invoked from within
-# "QObjects::_selectHandler .main_pane.objects.interior.cs.body.tree 0 4000"
-#     (command handling selection)
-#    <2:C:/intelFPGA/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {invalid command name "::AbstractDataset::simDataset0"}
-#    <1:eval:1: ::tk::dialog::error::bgerror {invalid command name "::AbstractDataset::simDataset0"}
-# End time: 22:16:21 on Nov 17,2024, Elapsed time: 0:06:45
-# Errors: 1, Warnings: 8
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# End time: 21:07:50 on Nov 18,2024, Elapsed time: 0:21:02
+# Errors: 1, Warnings: 3
