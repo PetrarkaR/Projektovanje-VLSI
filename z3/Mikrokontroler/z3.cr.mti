@@ -105,17 +105,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity pc
 -- Compiling architecture pc_arch of pc
 
-} {} {}} C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package DEFS
--- Compiling entity Controller
--- Compiling architecture Controller of Controller
-
 } {} {}} C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
