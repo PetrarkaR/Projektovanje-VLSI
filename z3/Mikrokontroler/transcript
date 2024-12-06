@@ -1,6 +1,23 @@
+# Compile of controller.vhd failed with 37 errors.
+# Compile of controller.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# Compile of controller.vhd was successful.
+# 14 compiles, 0 failed with no errors.
 vsim work.microcontroller_tb
 # vsim work.microcontroller_tb 
-# Start time: 19:08:23 on Nov 28,2024
+# Start time: 14:00:18 on Dec 04,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -25,6 +42,10 @@ vsim work.microcontroller_tb
 # Loading work.debounce(debounce)
 # WARNING: No extended dataflow license exists
 add wave -position insertpoint sim:/microcontroller_tb/*
+add wave -position end  sim:/microcontroller_tb/UUT/Reg1
+add wave -position end  sim:/microcontroller_tb/UUT/Reg2
+add wave -position end  sim:/microcontroller_tb/UUT/IRout
+add wave -position end  sim:/microcontroller_tb/UUT/U3/acc
 run -all
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
@@ -33,5 +54,5 @@ run -all
 #    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
 # ** Error: Unsupported memory initialization file type (PASS)!
 #    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
-# End time: 19:09:25 on Nov 28,2024, Elapsed time: 0:01:02
-# Errors: 1, Warnings: 3
+# End time: 14:01:35 on Dec 04,2024, Elapsed time: 0:01:17
+# Errors: 1, Warnings: 6

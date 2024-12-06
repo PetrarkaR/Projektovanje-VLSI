@@ -31,7 +31,7 @@ uint16_t integer_sqrt_roundup(uint16_t x) {
 }
 
 int main() {
-    uint16_t test_numbers[] = {0, 16, 15, 100, 7, 9};
+    uint16_t test_numbers[] = {1764};
     
     for (int i = 0; i < sizeof(test_numbers)/sizeof(test_numbers[0]); i++) {
         uint16_t sqrt_value = integer_sqrt_roundup(test_numbers[i]);
