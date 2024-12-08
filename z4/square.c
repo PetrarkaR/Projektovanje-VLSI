@@ -1,43 +1,62 @@
 #include <stdlib.h>
 #include <stdint.h>
+#include <stdbool.h>
+#include <stdio.h>
 
 uint16_t integer_sqrt_roundup(uint16_t x) {
-    if (x == 0) return 0;
-    
-    uint16_t left = 1;
-    uint16_t right = x;
-    uint16_t result = 0;
-    
-    while (left <= right) {
-        uint16_t mid = left + (right - left) / 2;
-        uint16_t square = mid * mid;
-        
-        if (square == x) {
-            return mid;  // Perfect square
-        }
-        
-        if (square < x) {
-            left = mid + 1;
-            result = mid;  // Store the largest integer whose square is <= x
+    int cnt = 0;
+    uint16_t diff = 0;
+    uint16_t min = 0;
+    uint16_t sub = 0;
+    uint8_t root = 0;
+    uint32_t registerA = x;
+
+    printf("Initial value of registerA: 0x%04X (%d)\n", registerA, registerA);
+
+    while (cnt < 12) {
+        // Extract 8 MSB of registerA as 'min'
+        min = (registerA >> 16) & 0xFFFF;
+        // Calculate sub
+        sub = (root << 2) | 0x01;
+        // Calculate diff
+        diff = min - sub;
+
+        printf("\nStep %d:\n", cnt + 1);
+        printf("  root: 0x%02X (%d)\n", root, root);
+        printf("  min (8 MSB of registerA): 0x%03X (%d)\n", min, min);
+        printf("  sub: 0x%02X (%d)\n", sub, sub);
+        printf("  diff (min - sub): 0x%03X (%d)\n", diff, diff);
+
+        if (min < sub) {
+            // If subtraction fails
+            registerA = ((diff & 0xFfF) << 12) | ((registerA & 0xFFFFF) << 2);
+            root = (root<<1);
+            
+            printf("  min < sub: subtraction unsuccessful\n");
+            printf("  Updated registerA: 0x%04X (%d)\n", registerA, registerA);
+            printf("  Updated root (shifted left): 0x%02X (%d)\n", root, root);
         } else {
-            right = mid - 1;
-            result = mid;  // Store the smallest integer whose square is >= x
+            // If subtraction is successful
+            registerA = registerA<<2;
+            root = root | 0x01;
+            
+            printf("  sub >= min: subtraction successful\n");
+            printf("  Updated registerA: 0x%04X (%d)\n", registerA, registerA);
+            printf("  Updated root (OR with 1): 0x%02X (%d)\n", root, root);
         }
+        if(root*root==x){
+            break;
+        }
+        cnt++;
     }
-    
-    // If the square of the current result is less than x, 
-    // we need to round up to the next integer
-    return (result * result < x) ? result + 1 : result;
+
+    printf("\nFinal root: 0x%02X (%d)\n", root, root);
+    return root;
 }
 
 int main() {
-    uint16_t test_numbers[] = {1764};
-    
-    for (int i = 0; i < sizeof(test_numbers)/sizeof(test_numbers[0]); i++) {
-        uint16_t sqrt_value = integer_sqrt_roundup(test_numbers[i]);
-        printf("Sqrt of %d (rounded up) is %d\n", test_numbers[i], sqrt_value);
-        printf("Verification: %d^2 = %d\n", sqrt_value, sqrt_value * sqrt_value);
-    }
-    
+    uint16_t x = 36;  // Example value
+    uint16_t result = integer_sqrt_roundup(x);
+    printf("Integer square root (rounded up) of %d is %d\n", x, result);
     return 0;
 }

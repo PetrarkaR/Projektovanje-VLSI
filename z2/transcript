@@ -1,48 +1,6 @@
-# Compile of 24bitSQC.vhd failed with 7 errors.
-# Compile of 24bitSQC_tb.vhd failed with 1 errors.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 2 failed with 8 errors.
-# Compile of 24bitSQC.vhd failed with 5 errors.
-# Compile of 24bitSQC_tb.vhd failed with 1 errors.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 2 failed with 6 errors.
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd failed with 1 errors.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 1 failed with 1 error.
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd failed with 5 errors.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 1 failed with 5 errors.
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd failed with 1 errors.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 1 failed with 1 error.
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd was successful.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 0 failed with no errors.
 vsim work.sqc_tb
 # vsim work.sqc_tb 
-# Start time: 20:35:39 on Nov 13,2024
+# Start time: 02:51:44 on Dec 07,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -53,65 +11,16 @@ vsim work.sqc_tb
 # Loading ieee.std_logic_arith(body)
 # Loading work.fa(behavioral)
 # WARNING: No extended dataflow license exists
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 0 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
 add wave -position insertpoint sim:/sqc_tb/*
 run -all
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /sqc_tb/uut
-# Break key hit
-quit -sim
-# End time: 20:39:10 on Nov 13,2024, Elapsed time: 0:03:31
-# Errors: 0, Warnings: 8
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd was successful.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 0 failed with no errors.
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd failed with 1 errors.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 1 failed with 1 error.
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd failed with 3 errors.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 1 failed with 3 errors.
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd failed with 4 errors.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 1 failed with 4 errors.
-# Compile of 24bitSQC.vhd was successful.
-# Compile of 24bitSQC_tb.vhd was successful.
-# Compile of adder_pkg - Copy.vhd was successful.
-# Compile of adder_pkg.vhd was successful.
-# Compile of fulladder.vhd was successful.
-# Compile of halfadder.vhd was successful.
-# 6 compiles, 0 failed with no errors.
-vsim work.sqc_tb
-# vsim work.sqc_tb 
-# Start time: 20:42:58 on Nov 13,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.sqc_tb(bench)
-# Loading work.adder_pkg
-# Loading work.sqc(behavioral)
-# Loading ieee.std_logic_arith(body)
-# Loading work.fa(behavioral)
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint sim:/sqc_tb/*
-run -all
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sqc_tb/uut
-# End time: 21:28:23 on Nov 13,2024, Elapsed time: 0:45:25
-# Errors: 0, Warnings: 7
+# End time: 03:37:22 on Dec 07,2024, Elapsed time: 0:45:38
+# Errors: 0, Warnings: 2
