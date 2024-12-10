@@ -3,60 +3,33 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-uint16_t integer_sqrt_roundup(uint16_t x) {
-    int cnt = 0;
-    uint16_t diff = 0;
-    uint16_t min = 0;
-    uint16_t sub = 0;
-    uint8_t root = 0;
-    uint32_t registerA = x;
-
-    printf("Initial value of registerA: 0x%04X (%d)\n", registerA, registerA);
-
-    while (cnt < 12) {
-        // Extract 8 MSB of registerA as 'min'
-        min = (registerA >> 16) & 0xFFFF;
-        // Calculate sub
-        sub = (root << 2) | 0x01;
-        // Calculate diff
-        diff = min - sub;
-
-        printf("\nStep %d:\n", cnt + 1);
-        printf("  root: 0x%02X (%d)\n", root, root);
-        printf("  min (8 MSB of registerA): 0x%03X (%d)\n", min, min);
-        printf("  sub: 0x%02X (%d)\n", sub, sub);
-        printf("  diff (min - sub): 0x%03X (%d)\n", diff, diff);
-
-        if (min < sub) {
-            // If subtraction fails
-            registerA = ((diff & 0xFfF) << 12) | ((registerA & 0xFFFFF) << 2);
-            root = (root<<1);
-            
-            printf("  min < sub: subtraction unsuccessful\n");
-            printf("  Updated registerA: 0x%04X (%d)\n", registerA, registerA);
-            printf("  Updated root (shifted left): 0x%02X (%d)\n", root, root);
-        } else {
-            // If subtraction is successful
-            registerA = registerA<<2;
-            root = root | 0x01;
-            
-            printf("  sub >= min: subtraction successful\n");
-            printf("  Updated registerA: 0x%04X (%d)\n", registerA, registerA);
-            printf("  Updated root (OR with 1): 0x%02X (%d)\n", root, root);
+short isqrt(short n)
+{
+    short x = 0; //rezultat prethodnog oduzimanja
+    short c = 0; //trenutni rezultat
+    short d = 7; //brojac, za 16b broj
+    while(d >= 0)
+    {
+        x <<= 2;
+        x += (n >> (d*2)) & 0x03;
+        short t = (c << 2) + 1;
+        if(x >= t)
+        {
+            x -= t;
+            c = (c << 1) + 1; //dodaje se 1 rezultatu
         }
-        if(root*root==x){
-            break;
-        }
-        cnt++;
+        else c <<= 1; //dodaje se 0 rezultatu
+        d--;
     }
-
-    printf("\nFinal root: 0x%02X (%d)\n", root, root);
-    return root;
+    return c;
 }
 
 int main() {
-    uint16_t x = 36;  // Example value
-    uint16_t result = integer_sqrt_roundup(x);
-    printf("Integer square root (rounded up) of %d is %d\n", x, result);
+    int i =0;
+    for(i=0;i<200;i++){
+        short result = isqrt(i);
+        printf("Integer square root (rounded up) of %d is %d\n", i, result);
+    }
+    
     return 0;
 }
