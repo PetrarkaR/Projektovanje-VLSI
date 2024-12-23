@@ -1,0 +1,619 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4
+Ealu
+Z0 w1731797495
+Z1 DPx4 work 4 defs 0 22 47XRTQVTbA;Fc1CakM95F2
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 208
+Z6 dC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat
+Z7 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/ALU.vhd
+Z8 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/ALU.vhd
+l0
+L7 1
+VL=_:ROHSI45S4I3kE:^]n0
+!s100 ?=e?d=4WIYgj?`gUKo=aC3
+Z9 OV;C;2020.1;71
+33
+Z10 !s110 1734899849
+!i10b 1
+Z11 !s108 1734899849.000000
+Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/ALU.vhd|
+Z13 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/ALU.vhd|
+!i113 1
+Z14 o-work work -2008 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Aalu
+R1
+R2
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 L=_:ROHSI45S4I3kE:^]n0
+!i122 208
+l19
+L15 43
+VGFo_Y46XQ0ZoE?I^U8_:b3
+!s100 HfOb4d12PHoN3;c[mdOjB3
+R9
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Econtroller
+Z16 w1733870090
+R1
+R3
+R2
+R4
+R5
+!i122 209
+R6
+Z17 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/controller.vhd
+Z18 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/controller.vhd
+l0
+L6 1
+VUPVnOb9LgIbz?YT^BcA=80
+!s100 IjF_>1B:3g?7QDKbN<LD[1
+R9
+32
+Z19 !s110 1734899850
+!i10b 1
+Z20 !s108 1734899850.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/controller.vhd|
+Z22 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/controller.vhd|
+!i113 1
+Z23 o-work work -2002 -explicit
+R15
+Acontroller
+R1
+R3
+R2
+R4
+R5
+DEx4 work 10 controller 0 22 UPVnOb9LgIbz?YT^BcA=80
+!i122 209
+l19
+L12 128
+V;IWKzdV:Vd5WS@SW]^4f[1
+!s100 X9996H4lzihba`f_N>GiP3
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R23
+R15
+Edebounce
+Z24 w1356204400
+R3
+R2
+R4
+R5
+!i122 210
+R6
+Z25 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Debounce.vhd
+Z26 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Debounce.vhd
+l0
+L5 1
+Vl`5TdY7:`lfV>ozo`OWnA3
+!s100 Kj@6zbW0H>XhUUGe=:mS33
+R9
+32
+R19
+!i10b 1
+R20
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Debounce.vhd|
+Z28 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Debounce.vhd|
+!i113 1
+R23
+R15
+Adebounce
+R3
+R2
+R4
+R5
+DEx4 work 8 debounce 0 22 l`5TdY7:`lfV>ozo`OWnA3
+!i122 210
+l16
+L13 30
+VSaQ5NWgaI749LiV9fHaC=3
+!s100 j1NN<P`mSSb_1?^_>]5nO2
+R9
+32
+R19
+!i10b 1
+R20
+R27
+R28
+!i113 1
+R23
+R15
+Pdefs
+R4
+R5
+!i122 211
+w1731797475
+R6
+8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/DEFS.vhd
+FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/DEFS.vhd
+l0
+L4 1
+V47XRTQVTbA;Fc1CakM95F2
+!s100 YclGm=FGeeFihGaSoe;N52
+R9
+32
+R19
+!i10b 1
+R20
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/DEFS.vhd|
+!s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/DEFS.vhd|
+!i113 1
+R23
+R15
+Eir
+Z29 w1356338832
+R4
+R5
+!i122 212
+R6
+Z30 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/IR.vhd
+Z31 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/IR.vhd
+l0
+L4 1
+V=4]7Ukzc6z<8kN4C<A=V13
+!s100 U5JnUA3XV;02Ufa:6cOK?0
+R9
+32
+R19
+!i10b 1
+R20
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/IR.vhd|
+Z33 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/IR.vhd|
+!i113 1
+R23
+R15
+Air
+R4
+R5
+DEx4 work 2 ir 0 22 =4]7Ukzc6z<8kN4C<A=V13
+!i122 212
+l12
+L10 13
+V?knYjkCKXPhmNL]2QGk9e3
+!s100 1B?jZWo2<I^X1RzX4eZ4e2
+R9
+32
+R19
+!i10b 1
+R20
+R32
+R33
+!i113 1
+R23
+R15
+Emar
+Z34 w1356150480
+R4
+R5
+!i122 213
+R6
+Z35 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/MAR.vhd
+Z36 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/MAR.vhd
+l0
+L4 1
+V4j6Wb?8W2XZgPc2U8gE=]2
+!s100 5KTJ[GYl2KE<l2Gcd6>Hn0
+R9
+32
+R19
+!i10b 1
+R20
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/MAR.vhd|
+Z38 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/MAR.vhd|
+!i113 1
+R23
+R15
+Amar
+R4
+R5
+DEx4 work 3 mar 0 22 4j6Wb?8W2XZgPc2U8gE=]2
+!i122 213
+l14
+L12 15
+V^Zf11Q6WC=SbQdX^]G3aE0
+!s100 ^^Y`i8j<Q7izm0Ijb9]Q62
+R9
+32
+R19
+!i10b 1
+R20
+R37
+R38
+!i113 1
+R23
+R15
+Ememory
+Z39 w1356197776
+R4
+R5
+!i122 214
+R6
+Z40 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/memory.vhd
+Z41 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/memory.vhd
+l0
+L7 1
+V>FK74UOA>CkSn00HdM2ZG1
+!s100 4hQ^GZje2_jSZ9Zn08COm1
+R9
+32
+R19
+!i10b 1
+R20
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/memory.vhd|
+Z43 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/memory.vhd|
+!i113 1
+R23
+R15
+Asyn
+R4
+R5
+DEx4 work 6 memory 0 22 >FK74UOA>CkSn00HdM2ZG1
+!i122 214
+l49
+L17 64
+V1J0cUlFY2LioC]Q<]8THJ2
+!s100 <T0;R<TP@EmT[Ja_3?G0M2
+R9
+32
+R19
+!i10b 1
+R20
+R42
+R43
+!i113 1
+R23
+R15
+Emicrocontroller
+Z44 w1731877762
+R4
+R5
+!i122 215
+R6
+Z45 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/microcontroller.vhd
+Z46 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/microcontroller.vhd
+l0
+L25 1
+V0JAOYKGLZb>_Je;1fTUT10
+!s100 38a6;2@0F_MhJ21mMNb7@3
+R9
+32
+R19
+!i10b 1
+R20
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/microcontroller.vhd|
+Z48 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/microcontroller.vhd|
+!i113 1
+R23
+R15
+Amicrocontroller
+R4
+R5
+Z49 DEx4 work 15 microcontroller 0 22 0JAOYKGLZb>_Je;1fTUT10
+!i122 215
+l203
+L39 369
+V:VC6``OhCj46JCCb9U:3=0
+!s100 CSY4@8AMW35@XFJ5GkQ2S3
+R9
+32
+R19
+!i10b 1
+R20
+R47
+R48
+!i113 1
+R23
+R15
+Emicrocontroller_tb
+Z50 w1734899847
+R4
+R5
+!i122 216
+R6
+Z51 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/microcontroller_TB.vhd
+Z52 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/microcontroller_TB.vhd
+l0
+L4 1
+VNcnm`Pb2iQnL^i8VZlmL:0
+!s100 e4=]0Me>Y]ddUQ3YbMDQ>3
+R9
+32
+R19
+!i10b 1
+R20
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/microcontroller_TB.vhd|
+Z54 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/microcontroller_TB.vhd|
+!i113 1
+R23
+R15
+Atb_architecture
+R4
+R5
+Z55 DEx4 work 18 microcontroller_tb 0 22 Ncnm`Pb2iQnL^i8VZlmL:0
+!i122 216
+l38
+L7 108
+VboaD>=akjO82YKKQBGVTM1
+!s100 SbzULQmo4eIbK^o7KV]7U2
+R9
+32
+R19
+!i10b 1
+R20
+R53
+R54
+!i113 1
+R23
+R15
+Epc
+Z56 w1356335788
+R3
+R2
+R4
+R5
+!i122 217
+R6
+Z57 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/pc.vhd
+Z58 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/pc.vhd
+l0
+L5 1
+VNSYiD^m6Boh5hcAN7n<^>2
+!s100 cXYPG?5CajLS`3<d[]Him0
+R9
+32
+Z59 !s110 1734899851
+!i10b 1
+R20
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/pc.vhd|
+Z61 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/pc.vhd|
+!i113 1
+R23
+R15
+Apc_arch
+R3
+R2
+R4
+R5
+DEx4 work 2 pc 0 22 NSYiD^m6Boh5hcAN7n<^>2
+!i122 217
+l18
+L16 27
+VR<3TL_Bz]S[2k=oiD;iJ>1
+!s100 M]^C0d=f<?cnZMDaaY:^m1
+R9
+32
+R59
+!i10b 1
+R20
+R60
+R61
+!i113 1
+R23
+R15
+Ereg
+Z62 w1356206576
+R4
+R5
+!i122 218
+R6
+Z63 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Reg.vhd
+Z64 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Reg.vhd
+l0
+L6 1
+VmDG7n15D9VP^c;UjD@de;0
+!s100 CIggXJ6nJlb8^0_an@JO?1
+R9
+32
+R59
+!i10b 1
+Z65 !s108 1734899851.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Reg.vhd|
+Z67 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Reg.vhd|
+!i113 1
+R23
+R15
+Areg
+R4
+R5
+DEx4 work 3 reg 0 22 mDG7n15D9VP^c;UjD@de;0
+!i122 218
+l19
+L18 13
+VLO9@AI_5Xk4[cU`AT^Wk:2
+!s100 azT[Q``O1WM`33YHA=4A@2
+R9
+32
+R59
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R23
+R15
+Erom256x16
+Z68 w1734899828
+R1
+R3
+R2
+R4
+R5
+!i122 219
+R6
+Z69 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/ROM.vhd
+Z70 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/ROM.vhd
+l0
+L6 1
+V<JBIoC@4GccXo`FV:8DC[2
+!s100 Q^VYg4`Emko8<mQ1Cz<G?1
+R9
+32
+R59
+!i10b 1
+R65
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/ROM.vhd|
+Z72 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/ROM.vhd|
+!i113 1
+R23
+R15
+Arom_arch
+R1
+R3
+R2
+R4
+R5
+DEx4 work 9 rom256x16 0 22 <JBIoC@4GccXo`FV:8DC[2
+!i122 219
+l28
+L12 119
+VaO4EKC_6?j@[a]N4Pl5Ln2
+!s100 B74iQJITg_^dI_23CWVOX2
+R9
+32
+R59
+!i10b 1
+R65
+R71
+R72
+!i113 1
+R23
+R15
+Esevensegdec
+Z73 w1356200914
+R4
+R5
+!i122 220
+R6
+Z74 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/SevenSegDec.vhd
+Z75 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/SevenSegDec.vhd
+l0
+L4 1
+VRH0@WFJ3]Z=0GekK;IjKO2
+!s100 H=IcDji:VbS;`[C96<aU50
+R9
+32
+R59
+!i10b 1
+R65
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/SevenSegDec.vhd|
+Z77 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/SevenSegDec.vhd|
+!i113 1
+R23
+R15
+Asevensegdec
+R4
+R5
+DEx4 work 11 sevensegdec 0 22 RH0@WFJ3]Z=0GekK;IjKO2
+!i122 220
+l16
+L13 58
+VSdS7b<07l^O1aQC;Ong<n1
+!s100 E`Ph2]OoS0Fz?dgL;O8bS3
+R9
+32
+R59
+!i10b 1
+R65
+R76
+R77
+!i113 1
+R23
+R15
+Ctestbench_for_microcontroller
+emicrocontroller_tb
+aTB_ARCHITECTURE
+R49
+DAx4 work 18 microcontroller_tb 15 tb_architecture 22 boaD>=akjO82YKKQBGVTM1
+R4
+R5
+R55
+!i122 216
+R50
+R6
+R51
+R52
+l0
+L116 1
+VBCoR2le5Z^oiKi_eRNoXg3
+!s100 z:_cG9B9fIiQ7aIWkNK`h2
+R9
+32
+R19
+!i10b 1
+R20
+R53
+R54
+!i113 1
+R23
+R15
+Ethree_state
+Z78 w1356197102
+R4
+R5
+!i122 221
+R6
+Z79 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Three_state.vhd
+Z80 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Three_state.vhd
+l0
+L6 1
+VGni`e9b^;gFhOzk<Rf0h^1
+!s100 Hef=En_]I_kcne>J@_fHZ2
+R9
+32
+R59
+!i10b 1
+R65
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Three_state.vhd|
+Z82 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z4-kvadrat/Three_state.vhd|
+!i113 1
+R23
+R15
+Athree_state
+R4
+R5
+Z83 DEx4 work 11 three_state 0 22 Gni`e9b^;gFhOzk<Rf0h^1
+!i122 221
+l16
+Z84 L15 5
+Z85 VD9@maj8o]1o;MNhmKb8gm3
+Z86 !s100 hob4@3OmM8OE5i8Mj8UHC3
+R9
+32
+R59
+!i10b 1
+R65
+R81
+R82
+!i113 1
+R23
+R15

@@ -16,7 +16,7 @@ Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 165
+!i122 179
 Z6 dC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler
 Z7 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd
 Z8 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd
@@ -26,9 +26,9 @@ VL=_:ROHSI45S4I3kE:^]n0
 !s100 ?=e?d=4WIYgj?`gUKo=aC3
 Z9 OV;C;2020.1;71
 33
-Z10 !s110 1733317215
+Z10 !s110 1733869978
 !i10b 1
-Z11 !s108 1733317215.000000
+Z11 !s108 1733869978.000000
 Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd|
 Z13 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ALU.vhd|
 !i113 1
@@ -41,7 +41,7 @@ R3
 R4
 R5
 DEx4 work 3 alu 0 22 L=_:ROHSI45S4I3kE:^]n0
-!i122 165
+!i122 179
 l19
 L15 43
 VGFo_Y46XQ0ZoE?I^U8_:b3
@@ -63,21 +63,21 @@ R3
 R2
 R4
 R5
-!i122 178
+!i122 192
 R6
-Z17 8C:\Users\swagg\OneDrive\Desktop\PVLSI\Projektovanje-VLSI\z3\Mikrokontroler\controller.vhd
-Z18 FC:\Users\swagg\OneDrive\Desktop\PVLSI\Projektovanje-VLSI\z3\Mikrokontroler\controller.vhd
+Z17 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd
+Z18 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd
 l0
 L6 1
 VUPVnOb9LgIbz?YT^BcA=80
 !s100 IjF_>1B:3g?7QDKbN<LD[1
 R9
 32
-Z19 !s110 1733317217
+Z19 !s110 1733869979
 !i10b 1
-Z20 !s108 1733317217.000000
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\swagg\OneDrive\Desktop\PVLSI\Projektovanje-VLSI\z3\Mikrokontroler\controller.vhd|
-Z22 !s107 C:\Users\swagg\OneDrive\Desktop\PVLSI\Projektovanje-VLSI\z3\Mikrokontroler\controller.vhd|
+Z20 !s108 1733869979.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd|
+Z22 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd|
 !i113 1
 Z23 o-work work -2002 -explicit
 R15
@@ -88,7 +88,7 @@ R2
 R4
 R5
 Z24 DEx4 work 10 controller 0 22 UPVnOb9LgIbz?YT^BcA=80
-!i122 178
+!i122 192
 l19
 Z25 L12 128
 Z26 V;IWKzdV:Vd5WS@SW]^4f[1
@@ -120,14 +120,12 @@ R9
 !s110 1731959136
 !i10b 1
 !s108 1731959136.000000
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd|
-Z29 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd|
+R21
+R22
 !i113 1
 R23
 R15
 w1731877729
-Z30 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd
-Z31 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/controller.vhd
 Acontroller_arch
 DPx4 work 4 defs 0 22 K;mg_Y8J1n2SKFdTUclg;1
 R3
@@ -162,8 +160,8 @@ R4
 R5
 !i122 163
 R6
-R31
-R30
+R17
+R18
 l0
 L6 1
 VK:o^aX83kn5Zea1]KNkzl2
@@ -173,21 +171,21 @@ R9
 !s110 1733317107
 !i10b 1
 !s108 1733317107.000000
-R28
-R29
+R21
+R22
 !i113 1
 R23
 R15
 Edebounce
-Z32 w1356204400
+Z28 w1356204400
 R3
 R2
 R4
 R5
-!i122 166
+!i122 180
 R6
-Z33 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd
-Z34 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd
+Z29 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd
+Z30 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd
 l0
 L5 1
 Vl`5TdY7:`lfV>ozo`OWnA3
@@ -197,8 +195,8 @@ R9
 R10
 !i10b 1
 R11
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd|
-Z36 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd|
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd|
+Z32 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Debounce.vhd|
 !i113 1
 R23
 R15
@@ -208,7 +206,7 @@ R2
 R4
 R5
 DEx4 work 8 debounce 0 22 l`5TdY7:`lfV>ozo`OWnA3
-!i122 166
+!i122 180
 l16
 L13 30
 VSaQ5NWgaI749LiV9fHaC=3
@@ -218,15 +216,15 @@ R9
 R10
 !i10b 1
 R11
-R35
-R36
+R31
+R32
 !i113 1
 R23
 R15
 Pdefs
 R4
 R5
-!i122 167
+!i122 181
 w1731797475
 R6
 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/DEFS.vhd
@@ -246,13 +244,13 @@ R11
 R23
 R15
 Eir
-Z37 w1356338832
+Z33 w1356338832
 R4
 R5
-!i122 168
+!i122 182
 R6
-Z38 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd
-Z39 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd
+Z34 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd
+Z35 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd
 l0
 L4 1
 V=4]7Ukzc6z<8kN4C<A=V13
@@ -262,8 +260,8 @@ R9
 R10
 !i10b 1
 R11
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd|
-Z41 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd|
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd|
+Z37 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/IR.vhd|
 !i113 1
 R23
 R15
@@ -271,7 +269,7 @@ Air
 R4
 R5
 DEx4 work 2 ir 0 22 =4]7Ukzc6z<8kN4C<A=V13
-!i122 168
+!i122 182
 l12
 L10 13
 V?knYjkCKXPhmNL]2QGk9e3
@@ -281,30 +279,30 @@ R9
 R10
 !i10b 1
 R11
-R40
-R41
+R36
+R37
 !i113 1
 R23
 R15
 Emar
-Z42 w1356150480
+Z38 w1356150480
 R4
 R5
-!i122 169
+!i122 183
 R6
-Z43 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd
-Z44 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd
+Z39 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd
+Z40 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd
 l0
 L4 1
 V4j6Wb?8W2XZgPc2U8gE=]2
 !s100 5KTJ[GYl2KE<l2Gcd6>Hn0
 R9
 32
-Z45 !s110 1733317216
+R10
 !i10b 1
 R11
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd|
-Z47 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd|
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd|
+Z42 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/MAR.vhd|
 !i113 1
 R23
 R15
@@ -312,40 +310,40 @@ Amar
 R4
 R5
 DEx4 work 3 mar 0 22 4j6Wb?8W2XZgPc2U8gE=]2
-!i122 169
+!i122 183
 l14
 L12 15
 V^Zf11Q6WC=SbQdX^]G3aE0
 !s100 ^^Y`i8j<Q7izm0Ijb9]Q62
 R9
 32
-R45
+R10
 !i10b 1
 R11
-R46
-R47
+R41
+R42
 !i113 1
 R23
 R15
 Ememory
-Z48 w1356197776
+Z43 w1356197776
 R4
 R5
-!i122 170
+!i122 184
 R6
-Z49 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd
-Z50 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd
+Z44 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd
+Z45 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd
 l0
 L7 1
 V>FK74UOA>CkSn00HdM2ZG1
 !s100 4hQ^GZje2_jSZ9Zn08COm1
 R9
 32
-R45
+R10
 !i10b 1
-Z51 !s108 1733317216.000000
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd|
-Z53 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd|
+R11
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd|
+Z47 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/memory.vhd|
 !i113 1
 R23
 R15
@@ -353,124 +351,124 @@ Asyn
 R4
 R5
 DEx4 work 6 memory 0 22 >FK74UOA>CkSn00HdM2ZG1
-!i122 170
+!i122 184
 l49
 L17 64
 V1J0cUlFY2LioC]Q<]8THJ2
 !s100 <T0;R<TP@EmT[Ja_3?G0M2
 R9
 32
-R45
+R10
 !i10b 1
-R51
-R52
-R53
+R11
+R46
+R47
 !i113 1
 R23
 R15
 Emicrocontroller
-Z54 w1731877762
+Z48 w1731877762
 R4
 R5
-!i122 171
+!i122 185
 R6
-Z55 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd
-Z56 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd
+Z49 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd
+Z50 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd
 l0
 L25 1
 V0JAOYKGLZb>_Je;1fTUT10
 !s100 38a6;2@0F_MhJ21mMNb7@3
 R9
 32
-R45
+R10
 !i10b 1
-R51
-Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd|
-Z58 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd|
+R11
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd|
+Z52 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller.vhd|
 !i113 1
 R23
 R15
 Amicrocontroller
 R4
 R5
-Z59 DEx4 work 15 microcontroller 0 22 0JAOYKGLZb>_Je;1fTUT10
-!i122 171
+Z53 DEx4 work 15 microcontroller 0 22 0JAOYKGLZb>_Je;1fTUT10
+!i122 185
 l203
 L39 369
 V:VC6``OhCj46JCCb9U:3=0
 !s100 CSY4@8AMW35@XFJ5GkQ2S3
 R9
 32
-R45
+R10
 !i10b 1
+R11
 R51
-R57
-R58
+R52
 !i113 1
 R23
 R15
 Emicrocontroller_tb
-Z60 w1608300685
+Z54 w1608300685
 R4
 R5
-!i122 172
+!i122 186
 R6
-Z61 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd
-Z62 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd
+Z55 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd
+Z56 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd
 l0
 L4 1
 VNcnm`Pb2iQnL^i8VZlmL:0
 !s100 e4=]0Me>Y]ddUQ3YbMDQ>3
 R9
 32
-R45
+R10
 !i10b 1
-R51
-Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd|
-Z64 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd|
+R11
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd|
+Z58 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/microcontroller_TB.vhd|
 !i113 1
 R23
 R15
 Atb_architecture
 R4
 R5
-Z65 DEx4 work 18 microcontroller_tb 0 22 Ncnm`Pb2iQnL^i8VZlmL:0
-!i122 172
+Z59 DEx4 work 18 microcontroller_tb 0 22 Ncnm`Pb2iQnL^i8VZlmL:0
+!i122 186
 l38
 L7 108
 V`21DdFI_5TScPm@Tb=2S^1
 !s100 Df5>FBINGblFi<`fz?dY:1
 R9
 32
-R45
+R10
 !i10b 1
-R51
-R63
-R64
+R11
+R57
+R58
 !i113 1
 R23
 R15
 Epc
-Z66 w1356335788
+Z60 w1356335788
 R3
 R2
 R4
 R5
-!i122 173
+!i122 187
 R6
-Z67 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd
-Z68 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd
+Z61 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd
+Z62 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd
 l0
 L5 1
 VNSYiD^m6Boh5hcAN7n<^>2
 !s100 cXYPG?5CajLS`3<d[]Him0
 R9
 32
-R45
+R19
 !i10b 1
-R51
-Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd|
-Z70 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd|
+R20
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd|
+Z64 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/pc.vhd|
 !i113 1
 R23
 R15
@@ -480,40 +478,40 @@ R2
 R4
 R5
 DEx4 work 2 pc 0 22 NSYiD^m6Boh5hcAN7n<^>2
-!i122 173
+!i122 187
 l18
 L16 27
 VR<3TL_Bz]S[2k=oiD;iJ>1
 !s100 M]^C0d=f<?cnZMDaaY:^m1
 R9
 32
-R45
+R19
 !i10b 1
-R51
-R69
-R70
+R20
+R63
+R64
 !i113 1
 R23
 R15
 Ereg
-Z71 w1356206576
+Z65 w1356206576
 R4
 R5
-!i122 174
+!i122 188
 R6
-Z72 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd
-Z73 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd
+Z66 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd
+Z67 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd
 l0
 L6 1
 VmDG7n15D9VP^c;UjD@de;0
 !s100 CIggXJ6nJlb8^0_an@JO?1
 R9
 32
-R45
+R19
 !i10b 1
-R51
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd|
-Z75 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd|
+R20
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd|
+Z69 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Reg.vhd|
 !i113 1
 R23
 R15
@@ -521,43 +519,43 @@ Areg
 R4
 R5
 DEx4 work 3 reg 0 22 mDG7n15D9VP^c;UjD@de;0
-!i122 174
+!i122 188
 l19
 L18 13
 VLO9@AI_5Xk4[cU`AT^Wk:2
 !s100 azT[Q``O1WM`33YHA=4A@2
 R9
 32
-R45
+R19
 !i10b 1
-R51
-R74
-R75
+R20
+R68
+R69
 !i113 1
 R23
 R15
 Erom256x16
-Z76 w1608296734
+Z70 w1608296734
 R1
 R3
 R2
 R4
 R5
-!i122 175
+!i122 189
 R6
-Z77 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd
-Z78 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd
+Z71 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd
+Z72 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd
 l0
 L6 1
 V<JBIoC@4GccXo`FV:8DC[2
 !s100 Q^VYg4`Emko8<mQ1Cz<G?1
 R9
 32
-R45
+R19
 !i10b 1
-R51
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd|
-Z80 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd|
+R20
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd|
+Z74 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/ROM.vhd|
 !i113 1
 R23
 R15
@@ -568,40 +566,40 @@ R2
 R4
 R5
 DEx4 work 9 rom256x16 0 22 <JBIoC@4GccXo`FV:8DC[2
-!i122 175
+!i122 189
 l22
 L12 82
 V7naQIb8_lZHZSg1LZOzB00
 !s100 LC9EEbmjGekJNIRKR2>5b3
 R9
 32
-R45
+R19
 !i10b 1
-R51
-R79
-R80
+R20
+R73
+R74
 !i113 1
 R23
 R15
 Esevensegdec
-Z81 w1356200914
+Z75 w1356200914
 R4
 R5
-!i122 176
+!i122 190
 R6
-Z82 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd
-Z83 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd
+Z76 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd
+Z77 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd
 l0
 L4 1
 VRH0@WFJ3]Z=0GekK;IjKO2
 !s100 H=IcDji:VbS;`[C96<aU50
 R9
 32
-R45
+R19
 !i10b 1
-R51
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd|
-Z85 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd|
+R20
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd|
+Z79 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/SevenSegDec.vhd|
 !i113 1
 R23
 R15
@@ -609,67 +607,67 @@ Asevensegdec
 R4
 R5
 DEx4 work 11 sevensegdec 0 22 RH0@WFJ3]Z=0GekK;IjKO2
-!i122 176
+!i122 190
 l16
 L13 58
 VSdS7b<07l^O1aQC;Ong<n1
 !s100 E`Ph2]OoS0Fz?dgL;O8bS3
 R9
 32
-R45
+R19
 !i10b 1
-R51
-R84
-R85
+R20
+R78
+R79
 !i113 1
 R23
 R15
 Ctestbench_for_microcontroller
 emicrocontroller_tb
 aTB_ARCHITECTURE
-R59
+R53
 DAx4 work 18 microcontroller_tb 15 tb_architecture 22 `21DdFI_5TScPm@Tb=2S^1
 R4
 R5
-R65
-!i122 172
-R60
+R59
+!i122 186
+R54
 R6
-R61
-R62
+R55
+R56
 l0
 L116 1
 VBCoR2le5Z^oiKi_eRNoXg3
 !s100 z:_cG9B9fIiQ7aIWkNK`h2
 R9
 32
-R45
+R10
 !i10b 1
-R51
-R63
-R64
+R11
+R57
+R58
 !i113 1
 R23
 R15
 Ethree_state
-Z86 w1356197102
+Z80 w1356197102
 R4
 R5
-!i122 177
+!i122 191
 R6
-Z87 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd
-Z88 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd
+Z81 8C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd
+Z82 FC:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd
 l0
 L6 1
 VGni`e9b^;gFhOzk<Rf0h^1
 !s100 Hef=En_]I_kcne>J@_fHZ2
 R9
 32
-R45
+R19
 !i10b 1
-R51
-Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd|
-Z90 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd|
+R20
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd|
+Z84 !s107 C:/Users/swagg/OneDrive/Desktop/PVLSI/Projektovanje-VLSI/z3/Mikrokontroler/Three_state.vhd|
 !i113 1
 R23
 R15
@@ -677,18 +675,18 @@ Athree_state
 R4
 R5
 DEx4 work 11 three_state 0 22 Gni`e9b^;gFhOzk<Rf0h^1
-!i122 177
+!i122 191
 l16
 L15 5
 VD9@maj8o]1o;MNhmKb8gm3
 !s100 hob4@3OmM8OE5i8Mj8UHC3
 R9
 32
-R45
+R19
 !i10b 1
-R51
-R89
-R90
+R20
+R83
+R84
 !i113 1
 R23
 R15

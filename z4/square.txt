@@ -1,0 +1,71 @@
+; Square Root Function
+; Input: 24-bit number in R0 (high), R1 (mid), R2 (low)
+; Output: 8-bit root in R7
+; minuend je 10 bitni podatak ali cemo da ga stavimo u 8bitni reg jer ne vidim slucaj da ce ikad da nam treba vise
+; subtrahend je 10 bitni podatak ali cemo da ga stavimo u 8bitni reg jer ne vidim slucaj da ce ikad da nam treba vise
+; Rtemp1 Rtemp0 
+FUNCTION rootf:
+    ; Initialize registers
+    R7  = 0        ; root
+    R4  = 0        ; i=0
+    R0 = 0         ; 0reg, expansion
+    R1 = input2
+    R2 = input1
+ITERATION_START:
+    ;znaci ceo registar je R0 R1 R2 u tom redu, znaci broj nakon ucitavanja je x"000009"
+
+    
+    ; Construct 10-bit minuend
+    R8 = R0
+    R9 = (R7<<2) | 0x1
+    ; Construct subtrahend: (root << 2) | 1
+
+    ; 10-bit subtraction
+    R10 = R8 - R9      ; Subtract subtrahend from minuend
+
+    ; Check for overflow (negative result)
+    IF R10 >= 0x80 GOTO OVERFLOW_CASE ; 1000 0000
+
+NO_OVERFLOW:
+    ; Shift working number left by 2
+    CARRY = 0
+    R2 = R2 << 2    
+    R1 = R1 << 2 | (R2 >> 6)
+    R0 = R0 << 2 | (R1 >> 6)
+
+    ; Shift root left
+    R7 = R7 << 1
+    GOTO ITERATION_CONTINUE
+
+OVERFLOW_CASE:
+    ; Place difference in top bits
+    ; Difference is in R10
+    R0 = R10 >> 6      ; Top bits of difference
+    R0 = R0 & 0x03     ; Mask to 2 bits
+
+    ; Reconstruct working number:
+    ; Top 2 bits = difference
+    ; Next 12 bits = original working number's first 12 bits
+    R1 = R1 & 0x0F     ; Keep low 4 bits of mid-high byte
+    R1 = R1 | ((R0 & 0x03) << 4)  ; Add top 2 bits of difference
+    
+    ; Shift and append 00
+    CARRY = 0
+    R2 = (R2<<2) |  Rtemp0 
+    R1 = Rtemp1 
+    R0 = R10
+
+    ; Shift root left and set LSB
+    R7 = R7 << 1
+    R7 = R7 | 0x01
+
+ITERATION_CONTINUE:
+    ; Decrement loop counter
+    R4 = R4 - 1
+    IF R4 > 0 GOTO ITERATION_START
+
+    ; Right shift root by 1
+    R7 = R7 >> 1
+
+    ; Return result in R7
+    RETURN

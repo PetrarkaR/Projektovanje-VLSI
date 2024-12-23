@@ -1,0 +1,540 @@
+# Compile of ALU.vhd failed with 3 errors.
+# Compile of controller.vhd failed with 3 errors.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 2 failed with 6 errors.
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd failed with 4 errors.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 1 failed with 4 errors.
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+vsim work.microcontroller_tb
+# vsim work.microcontroller_tb 
+# Start time: 20:38:09 on Dec 22,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+add wave -position insertpoint sim:/microcontroller_tb/*
+add wave -position end  sim:/microcontroller_tb/UUT/U3/acc
+add wave -position end  sim:/microcontroller_tb/UUT/Reg2
+add wave -position end  sim:/microcontroller_tb/UUT/Reg1
+add wave -position end  sim:/microcontroller_tb/UUT/address
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+add wave -position end  sim:/microcontroller_tb/UUT/U9/pom2
+add wave -position end  sim:/microcontroller_tb/UUT/U9/pom1
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd failed with 1 errors.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 1 failed with 1 error.
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd failed with 1 errors.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 1 failed with 1 error.
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd failed with 1 errors.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 1 failed with 1 error.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd failed with 1 errors.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 1 failed with 1 error.
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+run -all
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd failed with 1 errors.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 1 failed with 1 error.
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# Compile of ALU.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of Debounce.vhd was successful.
+# Compile of DEFS.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of MAR.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of microcontroller.vhd was successful.
+# Compile of microcontroller_TB.vhd was successful.
+# Compile of pc.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of SevenSegDec.vhd was successful.
+# Compile of Three_state.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.microcontroller_tb(tb_architecture)
+# Loading work.microcontroller(microcontroller)
+# Loading work.memory(syn)
+# Loading work.sevensegdec(sevensegdec)
+# Loading work.reg(reg)
+# Loading work.three_state(three_state)
+# Loading work.defs
+# Loading work.controller(controller)
+# Loading work.alu(alu)
+# Loading work.ir(ir)
+# Loading work.mar(mar)
+# Loading work.rom256x16(rom_arch)
+# Loading work.pc(pc_arch)
+# Loading work.debounce(debounce)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U3
+# ** Warning: (vsim-7) Failed to open VHDL file "BYPASS" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# ** Error: Unsupported memory initialization file type (PASS)!
+#    Time: 0 ps  Iteration: 0  Instance: /microcontroller_tb/UUT/U1/altsyncram_component
+# End time: 22:46:09 on Dec 22,2024, Elapsed time: 2:08:00
+# Errors: 1, Warnings: 3

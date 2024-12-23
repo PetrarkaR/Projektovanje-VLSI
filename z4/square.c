@@ -1,34 +1,38 @@
 #include <stdlib.h>
 #include <stdint.h>
-#include <stdbool.h>
 #include <stdio.h>
 
-short isqrt(short n)
-{
-    short x = 0; //rezultat prethodnog oduzimanja
-    short c = 0; //trenutni rezultat
-    short d = 7; //brojac, za 16b broj
-    while(d >= 0)
-    {
-        x <<= 2;
-        x += (n >> (d*2)) & 0x03;
-        short t = (c << 2) + 1;
-        if(x >= t)
-        {
-            x -= t;
-            c = (c << 1) + 1; //dodaje se 1 rezultatu
+uint16_t rootf(uint16_t input) {
+    uint16_t accumulator = 0;
+    uint16_t extracted = 0;
+    int16_t bitDepth =7;
+    
+    while (bitDepth >= 0) {
+        // vadi bitove
+        extracted = (extracted << 2) | ((input >> (bitDepth * 2)) & 0b011);
+        //ovo je sub
+        uint16_t sub = (accumulator << 2) | 1;
+        
+        if (extracted >= sub) {
+            extracted -= sub;
+            accumulator = (accumulator << 1) | 1;
+        } else {
+            accumulator <<= 1;
         }
-        else c <<= 1; //dodaje se 0 rezultatu
-        d--;
+        
+        bitDepth--;
     }
-    return c;
+    
+    return accumulator;
 }
+
 
 int main() {
     int i =0;
-    for(i=0;i<200;i++){
-        short result = isqrt(i);
-        printf("Integer square root (rounded up) of %d is %d\n", i, result);
+    for(i=0;i<256;i++){
+        
+        short result = rootf(i);
+        printf("Integer square root of %d is %d\n", i, result);
     }
     
     return 0;
