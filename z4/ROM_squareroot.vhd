@@ -83,7 +83,7 @@ begin
 			when x"1E" => bus1<=nop&"000"&x"00"; -- rtl
 			when x"1F" => bus1<=nop&"000"&x"00"; -- rtl
 
-            -- Start calculation - Initialize
+            
             when x"40" => bus1 <= load & "000" & INPUT_H;    
             when x"41" => bus1 <= store & "000" & REGA_M;    -- REGA_M = INPUT_H
             when x"42" => bus1 <= load & "000" & INPUT_L;
@@ -91,35 +91,30 @@ begin
             when x"44" => bus1 <= loadl & "000" & x"00";     -- Load counter = 8
             when x"45" => bus1 <= store & "000" & counter;
             when x"46" => bus1 <= jmp & "000" & x"50";       -- Jump to iteration start
+            -- regx ja mislim :D
             when x"47" => bus1 <= load & "000" & REGA_H;       -- Jump to iteration start
             when x"48" => bus1 <= store & "000" & REGX_H;       -- Jump to iteration start
             when x"49" => bus1 <= load & "000" & REGA_M;       -- Jump to iteration start
             when x"4A" => bus1 <= store & "000" & REGX_L;       -- Jump to iteration start
 
-            -- Iteration start - Construct X
-            when x"50" => bus1 <= loadl & "000" & x"06";       -- Load immediate value 6 into COUNTER
-            when x"51" => bus1 <= store & "000" & TEMP1;       -- Store COUNTER
-            when x"52" => bus1 <= clrf & "000" & x"00";        -- Clear flags ONCE before starting rotations
+            when x"50" => bus1 <= loadl & "000" & x"06";       -- 
+            when x"51" => bus1 <= store & "000" & TEMP1;       -- 
+            when x"52" => bus1 <= clrf & "000" & x"00";        -- 
 
-            -- Start of loop (LOOP1)
-            -- Rotate RegX_H with carry
-            when x"53" => bus1 <= load & "000" & REGX_H;       -- Load RegX_H
-            when x"54" => bus1 <= rorc & "000" & x"00";        -- Perform RORC on RegX_H
-            when x"55" => bus1 <= store & "000" & REGX_H;      -- Store updated RegX_H
+            when x"53" => bus1 <= load & "000" & REGX_H;       -- 
+            when x"54" => bus1 <= rorc & "000" & x"00";        -- 
+            when x"55" => bus1 <= store & "000" & REGX_H;      -- 
 
-            -- Rotate RegX_L with carry
             when x"56" => bus1 <= load & "000" & REGX_L;       -- Load RegX_L
-            when x"57" => bus1 <= rorc & "000" & x"00";        -- Perform RORC on RegX_L
-            when x"58" => bus1 <= store & "000" & REGX_L;      -- Store updated RegX_L
+            when x"57" => bus1 <= rorc & "000" & x"00";        -- 
+            when x"58" => bus1 <= store & "000" & REGX_L;      -- 
 
-            -- Decrement counter
-            when x"59" => bus1 <= load & "000" & TEMP1;        -- Load COUNTER
-            when x"5A" => bus1 <= sub_op & "000" & one;        -- Decrement COUNTER by 1
-            when x"5B" => bus1 <= store & "000" & TEMP1;       -- Store updated COUNTER
-
-            -- Conditional jump (if COUNTER != 0, jump back to LOOP1)
-            when x"5C" => bus1 <= jnz & "000" & x"53";         -- Jump to LOOP1 if COUNTER is not zero (now points to x"53")
-            when x"5D" => bus1 <= jmp & "000" & x"66";       -- Jump to LOOP1 if COUNTER is not zero
+        
+            when x"59" => bus1 <= load & "000" & TEMP1;        -- 
+            when x"5A" => bus1 <= sub_op & "000" & one;        -- 
+            when x"5B" => bus1 <= store & "000" & TEMP1;       -- 
+            when x"5C" => bus1 <= jnz & "000" & x"53";         -- nazad na rotiranje
+            when x"5D" => bus1 <= jmp & "000" & x"66";       -- skoci na regy deo
 
 
 
@@ -155,7 +150,7 @@ begin
             when x"80" => bus1 <= addc & "000" & REGY_H;
             when x"81" => bus1 <= clrf & "000" & x"00";      -- Clear flag
 
-            -- Perform subtraction (X - Y)
+            -- Perform subtraction (X + (!Y+1))
             when x"83" => bus1 <= load & "000" & REGX_L;
             when x"84" => bus1 <= add & "000" & REGY_L;      -- Add negative Y
             when x"85" => bus1 <= store & "000" & REGZ_L;
@@ -225,27 +220,23 @@ begin
             when x"CB" => bus1 <= store & "000" & TEMP1;      -- Store counter in TEMP1
 			when x"CC" => bus1 <= clrf & "000" & x"00";       -- Clear flags
 
-            -- Rotate REGA_L (low byte) left through carry
             when x"CD" => bus1 <= load & "000" & REGA_L;      -- Load REGA_L
             when x"CE" => bus1 <= rolc & "000" & x"00";       -- Rotate left through carry
             when x"CF" => bus1 <= store & "000" & REGA_L;     -- Store REGA_L
 
-            -- Rotate REGA_M (high byte) left through carry
             when x"D0" => bus1 <= load & "000" & REGA_M;      -- Load REGA_M
             when x"D1" => bus1 <= rolc & "000" & x"00";       -- Rotate left through carry
             when x"D2" => bus1 <= store & "000" & REGA_M;     -- Store REGA_M
 
-            -- Decrement counter
             when x"D3" => bus1 <= load & "000" & TEMP1;       -- Load counter
             when x"D4" => bus1 <= sub_op & "000" & one;       -- Decrement counter
             when x"D5" => bus1 <= store & "000" & TEMP1;      -- Store counter
 
-            -- Loop condition
             when x"D6" => bus1 <= jnz & "000" & x"CC";        -- Jump to loop start if counter != 0
             when x"D7" => bus1 <= jmp & "000" & x"D8";        -- Continue to next instruction
             when x"D8" => bus1 <= jmp & "000" & x"B1";       -- Jump to counter decrement
 
-            -- Counter decrement and loop control
+            -- debug i loop deo
 			when x"B1" => bus1 <= load & "000" & REGA_H;
 			when x"B2" => bus1 <= load & "000" & REGA_M;
 			when x"B3" => bus1 <= load & "000" & REGA_L;
@@ -261,7 +252,9 @@ begin
 			when x"BD" => bus1 <= store & "000" & counter;
 			when x"BE" => bus1 <= loadl & "000" & x"08";
 			when x"BF" => bus1 <= sub_op & "000" & counter;
+            --adresa pocetka
 			when x"C0" => bus1 <= jnz & "000" & x"47";
+            --posle da skoci da stampa na display
 			when x"C1" => bus1 <= jz & "000" & x"E7";
 
 
